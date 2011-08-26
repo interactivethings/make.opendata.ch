@@ -101,6 +101,12 @@ require_once(DOKU_INC.'inc/init.php');
       <div class="row">
         <div class="span12 offset2">
           <?= p_wiki_xhtml("fr:how") ?>
+          
+          <p><form name="ideate" method="get" action="#" onSubmit="document.location.href = 'doku.php?do=edit&id=idea:' + document.getElementById('ideate_id').value.replace(/[-\\.,_*+&#?^$[\](){}!=|]/g,'').replace(/\s/g,'_'); return false">
+          <b>Mon idée:</b>
+          <input name="id" id="ideate_id" type="text" maxlength="16" size="16" value="" />
+          <input type="submit" />
+          </form></p>
         </div>
       </div>
       
