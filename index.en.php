@@ -5,10 +5,10 @@ if(!defined('DOKU_INC')) define('DOKU_INC',dirname(__FILE__).'/');
 require_once(DOKU_INC.'inc/init.php');
 
 ?><!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>MAKE.OPENDATA.CH</title>
+    <title>MakeOpenData.ch</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -20,7 +20,8 @@ require_once(DOKU_INC.'inc/init.php');
     <link href="assets/vendor/bootstrap/bootstrap-1.1.0.min.css" rel="stylesheet">
     <link href="assets/app/stylesheets/base.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" /> 
     <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">

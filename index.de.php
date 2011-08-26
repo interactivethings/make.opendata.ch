@@ -5,7 +5,7 @@ if(!defined('DOKU_INC')) define('DOKU_INC',dirname(__FILE__).'/');
 require_once(DOKU_INC.'inc/init.php');
 
 ?><!DOCTYPE html>
-<html lang="fr">
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <title>MakeOpenData.ch</title>
@@ -38,86 +38,86 @@ require_once(DOKU_INC.'inc/init.php');
           <h1 id="logo"><img src="assets/app/images/make.opendata.ch_logo.png" width="220" height="225" alt="MAKE.OPENDATA.CH HACKATHON" /></h1>
         </div>
         <div class="span10">
-          <p class="blurb">Le premier Open Data Hackathon de Suisse<br />30 septembre – 1 octobre 2011<br />Lausanne et Zürich</p>
+          <p class="blurb">Der erste Open Data Hackathon der Schweiz<br />30. September – 1. Oktober 2011<br />Zürich und Lausanne</p>
         </div>
         
         <div class="lang">
           <ul>
-          	<li><a class="btn" href="index.de.php">Deutsch</a></li>
+          	<li><a class="btn" href="index.fr.php">Français</a></li>
           	<li><a class="btn" href="index.en.php">English</a></li>
           </ul>
         </div>
       </div>
       <div class="page-header">
-        <h1>Quoi?<span></span></h1>
+        <h1>Was?<span></span></h1>
       </div>
       
       <div class="row">
         <div class="span12 offset2">
-          <?= p_wiki_xhtml("fr:what") ?>
+          <?= p_wiki_xhtml("de:what") ?>
         </div>
       </div>
       
       <div class="page-header">
-        <h1>Pour qui?<span></span></h1>
+        <h1>Für wen?<span></span></h1>
       </div>
       
       <div class="row">
         <div class="span12 offset2">
-         	<?= p_wiki_xhtml("fr:who") ?>
+         	<?= p_wiki_xhtml("de:who") ?>
         </div>
       </div>
       
       <div class="page-header">
-        <h1>Quand?<span></span></h1>
+        <h1>Wann?<span></span></h1>
       </div>
       
       <div class="row">
         <div class="span12 offset2">
-			<?= p_wiki_xhtml("fr:when") ?>
+			<?= p_wiki_xhtml("de:when") ?>
         </div>
       </div>
       
       <div class="page-header">
-        <h1>Ou?<span></span></h1>
+        <h1>Wo?<span></span></h1>
       </div>
       
       <div class="row">
         <div class="span12 offset2">
-          <?= p_wiki_xhtml("fr:where") ?>
+          <?= p_wiki_xhtml("de:where") ?>
         
-        	<p><a class="btn" href="doku.php?id=fr:home&do=register&lang=fr">Inscription</a></p>
+        	<p><a class="btn" href="doku.php?id=de:home&do=register&lang=de">Melde Dich an</a></p>
 		    
         </div>
       </div>
       
       <div class="page-header">
-        <h1>Comment?<span></span></h1>
+        <h1>Wie?<span></span></h1>
       </div>
       
       <div class="row">
         <div class="span12 offset2">
-          <?= p_wiki_xhtml("fr:how") ?>
+          <?= p_wiki_xhtml("de:how") ?>
         </div>
       </div>
       
       <div class="page-header">
-        <h1>Sponsors<span></span></h1>
+        <h1>Sponsoren<span></span></h1>
       </div>
       
       <div class="row">
         <div class="span12 offset2">
-          <?= p_wiki_xhtml("fr:sponsor") ?>
+          <?= p_wiki_xhtml("de:sponsor") ?>
         </div>
       </div>
       
       <div class="page-header">
-        <h1>A propos<span></span></h1>
+        <h1>Hintergrund<span></span></h1>
       </div>
 
       <div class="row">
         <div class="span12 offset2">
-          <?= p_wiki_xhtml("fr:about") ?>
+          <?= p_wiki_xhtml("de:about") ?>
         </div>
       </div>
 
