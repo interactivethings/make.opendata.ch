@@ -47,6 +47,7 @@ require_once(DOKU_INC.'inc/init.php');
           	<li><a class="btn" href="index.en.php">English</a></li>
           </ul>
         </div>
+        
       </div>
       <div class="page-header">
         <h1>Was?<span></span></h1>
@@ -55,7 +56,10 @@ require_once(DOKU_INC.'inc/init.php');
       <div class="row">
         <div class="span12 offset2">
           <?= p_wiki_xhtml("de:what") ?>
-        </div>
+
+       	  <p><a class="btn" href="doku.php?id=de:home&do=register&lang=de">Registrieren</a>
+       	     <a class="btn" href="doku.php?id=de:home&do=login&lang=de">Anmelden</a></p>
+       	</div>
       </div>
       
       <div class="page-header">

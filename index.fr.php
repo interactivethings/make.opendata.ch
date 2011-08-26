@@ -55,6 +55,9 @@ require_once(DOKU_INC.'inc/init.php');
       <div class="row">
         <div class="span12 offset2">
           <?= p_wiki_xhtml("fr:what") ?>
+        
+          <p><a class="btn" href="doku.php?id=fr:home&do=register&lang=fr">Inscription</a>
+             <a class="btn" href="doku.php?id=fr:home&do=login&lang=fr">Accéder et contribuer</a></p>
         </div>
       </div>
       
