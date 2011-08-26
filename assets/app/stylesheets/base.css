@@ -18,6 +18,9 @@ a, a:hover, a:visited {
 a.btn {
   color: #222;
   text-decoration: none;
+  font-size: 18pt;
+  font-weight: bold;
+  padding: 10px;
 }
 
 h2, h3 {
@@ -99,4 +102,21 @@ table {
 table td {
   line-height: inherit;
   vertical-align: top;
+}
+
+.lang {
+  position:absolute;
+  top:1em; right:2em;
+}
+
+.lang ul, .lang li {
+  list-style:none;
+}
+
+.lang li {
+  float:left; padding-left:6px;
+}
+
+.lang .btn {
+  font-size:12pt; padding:6pt; background-color:#fff;
 }

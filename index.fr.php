@@ -37,11 +37,18 @@ require_once(DOKU_INC.'inc/init.php');
           <h1 id="logo"><img src="assets/app/images/make.opendata.ch_logo.png" width="220" height="225" alt="MAKE.OPENDATA.CH HACKATHON" /></h1>
         </div>
         <div class="span10">
-          <p class="blurb">Der erste Open Data Hackathon der Schweiz<br />30. September – 1. Oktober 2011<br />Zürich und Lausanne</p>
+          <p class="blurb">Le premier Open Data Hackathon de Suisse<br />30 septembre – 1 octobre 2011<br />Lausanne et Zürich</p>
+        </div>
+        
+        <div class="lang">
+          <ul>
+          	<li><a class="btn" href="index.php">Deutsch</a></li>
+          	<li><a class="btn" href="index.en.php">English</a></li>
+          </ul>
         </div>
       </div>
       <div class="page-header">
-        <h1>Was?<span></span></h1>
+        <h1>Quoi?<span></span></h1>
       </div>
       
       <div class="row">
@@ -51,7 +58,7 @@ require_once(DOKU_INC.'inc/init.php');
       </div>
       
       <div class="page-header">
-        <h1>Für wen?<span></span></h1>
+        <h1>Pour qui?<span></span></h1>
       </div>
       
       <div class="row">
@@ -61,7 +68,7 @@ require_once(DOKU_INC.'inc/init.php');
       </div>
       
       <div class="page-header">
-        <h1>Wann?<span></span></h1>
+        <h1>Quand?<span></span></h1>
       </div>
       
       <div class="row">
@@ -71,21 +78,20 @@ require_once(DOKU_INC.'inc/init.php');
       </div>
       
       <div class="page-header">
-        <h1>Wo?<span></span></h1>
+        <h1>Ou?<span></span></h1>
       </div>
       
       <div class="row">
         <div class="span12 offset2">
           <?= p_wiki_xhtml("fr:where") ?>
         
-        	<p><a class="btn" href="doku.php?id=home&do=register">Melde Dich in Zürich an</a></p>
-		    <p><a class="btn" href="doku.php?id=home&do=register">Melde Dich in Lausanne an</a></p>
+        	<p><a class="btn" href="doku.php?id=home&do=register&lang=fr">Inscription</a></p>
 		    
         </div>
       </div>
       
       <div class="page-header">
-        <h1>Wie?<span></span></h1>
+        <h1>Comment?<span></span></h1>
       </div>
       
       <div class="row">
@@ -95,7 +101,7 @@ require_once(DOKU_INC.'inc/init.php');
       </div>
       
       <div class="page-header">
-        <h1>Sponsoren<span></span></h1>
+        <h1>Sponsors<span></span></h1>
       </div>
       
       <div class="row">
@@ -105,7 +111,7 @@ require_once(DOKU_INC.'inc/init.php');
       </div>
       
       <div class="page-header">
-        <h1>Hintergrund<span></span></h1>
+        <h1>A propos<span></span></h1>
       </div>
 
       <div class="row">
