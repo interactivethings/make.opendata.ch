@@ -16,6 +16,7 @@ a, a:hover, a:visited {
 }
 
 a.btn {
+  color: #222;
   text-decoration: none;
 }
 
@@ -89,4 +90,13 @@ footer p {
   height: 11px;
   width: 10px;
   background: transparent url(../images/bubble_pointer.png) 0 100% no-repeat;
+}
+
+table {
+  font-size: inherit;
+}
+
+table td {
+  line-height: inherit;
+  vertical-align: top;
 }
