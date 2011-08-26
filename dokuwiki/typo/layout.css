@@ -1,0 +1,127 @@
+body {
+	background:#fff url('/lib/tpl/typo/images/opendata-bg.gif') no-repeat top right !important;
+}
+
+a#dokuwiki__top {
+/*	color:#a33 !important;
+	font-family: monospace;
+	font-style: italic;
+	font-size: 45pt;
+	text-shadow: 2px 2px 0px #383;
+*/
+	font-size: 0px;
+	background: url(/assets/app/images/make.opendata.ch_logo.png) no-repeat;
+	width: 220px; height: 225px; display:block;
+}
+
+div.dokuwiki div#sidebar {
+	padding-top:0; top:0px;
+}
+
+div.dokuwiki div.navigation div.li a {
+	color: #e33 !important;
+}
+
+#sidebar .actions ul { list-style:none; }
+#sidebar .actions li { padding-bottom:2px; }
+
+#sidebar .actions a.action {
+	background: #a33 url(/lib/tpl/typo/images/alert-overlay.png) repeat-x; 
+	display: inline-block; 
+	padding: 5px 10px 6px; 
+	color: #fff; 
+	text-decoration: none;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+}
+
+#sidebar .actions a.action:hover {
+	color: #333 !important;
+	background-color: #e99;
+}
+
+/**
+ * Tableless Layout for default template
+ *
+ * @author Andreas Gohr <andi@splitbrain.org>
+ * @author moraes <moraes@tipos.com.br>
+ */
+
+/* -------------- top row --------------- */
+div.dokuwiki .header {
+  padding: 3px 0 0 2px;
+}
+
+div.dokuwiki .pagename {
+  float: left;
+  font-size: 200%;
+  font-weight: bolder;
+  color: __background_alt__;
+  text-align: left;
+  vertical-align: middle;
+}
+
+div.dokuwiki .pagename a {
+  color: __extern__ !important;
+  text-decoration: none !important;
+}
+
+div.dokuwiki .logo {
+  float: right;
+  font-size: 220%;
+  font-weight: bolder;
+  text-align: right;
+  vertical-align: middle;
+}
+
+div.dokuwiki .logo a {
+  color: __background_alt__ !important;
+  text-decoration: none !important;
+  font-variant: small-caps;
+  letter-spacing: 2pt;
+}
+
+/* ---------------  top and bottom bar ---------------- */
+div.dokuwiki .bar {
+  border-top: 1px solid __border__;
+  border-bottom: 1px solid __border__;
+  background: __background_alt__;
+  padding: 0.1em 0.15em;
+  clear: both;
+}
+
+div.dokuwiki .bar-left {
+  float: left;
+}
+
+div.dokuwiki .bar-right {
+  float: right;
+  text-align: right;
+}
+
+div.dokuwiki #bar__bottom {
+  margin-bottom: 3px;
+}
+
+/* ------------- File Metadata ----------------------- */
+
+div.dokuwiki div.meta {
+  clear: both;
+  margin-top: 1em;
+  color: __text_alt__;
+  font-size: 70%;
+}
+
+div.dokuwiki div.meta div.user {
+  float: left;
+}
+
+div.dokuwiki div.meta div.doc {
+  text-align: right;
+}
