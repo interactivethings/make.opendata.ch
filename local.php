@@ -32,5 +32,14 @@ if (isset($_REQUEST['lang'])) {
 		$_REQUEST['lang'] == "fr" ||
 		$_REQUEST['lang'] == "de" ||
 		$_REQUEST['lang'] == "it") { $conf['lang'] = $_REQUEST['lang']; }
+} else {
+	$pagelang = preg_replace('/^(..):.*/i','$1',$_REQUEST['id']);
+	if (strlen($pagelang)<>2) {
+		$pagelang = preg_replace('/^(..):.*/i','$1',$_REQUEST['ns']);
+	}
+	if(	$pagelang == "en" || 
+		$pagelang == "fr" || 
+		$pagelang == "de" || 
+		$pagelang == "it") { $conf['lang'] = $pagelang; }
 }
 /* ******** */
