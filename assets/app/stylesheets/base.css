@@ -3,11 +3,25 @@ body {
   color: white;
   font-family: Times, "Times New Roman", serif;
   font-size: 18px;
+  font-style: italic;
+  
 }
 
 p {
+  color: white;
   font-size: 18px;
   line-height: 24px;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+li {
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  font-style: italic;
+  
 }
 
 a, a:hover, a:visited {
@@ -15,18 +29,46 @@ a, a:hover, a:visited {
   text-decoration: underline;
 }
 
+a:hover {
+  color: #222;
+}
+
 a.btn {
+  font-family: depot-new-condensed, Univers, Helvetica, Arial, sans-serif;
+  font-weight: normal;
   color: #222;
   text-decoration: none;
-  font-size: 18pt;
-  font-weight: bold;
-  padding: 10px;
+  font-size: 18px;
+
+  padding: 0 20px;
+  line-height: 60px;
+  border: none;
+  background: white;
+  
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+a.btn:hover {
+  color: #E1343F;
+  background: #222;
+  text-shadow: none;
 }
 
 h2, h3 {
-  color: white;
-  font-style: italic;
+  font-family: depot-new-condensed, Univers, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #fff;
   margin: 12px 0;
+}
+
+h2 {
+  color: #222;
 }
 
 footer {
@@ -40,19 +82,33 @@ footer p {
 }
 
 #logo {
+  margin: 0;
   margin-left: -10px;
+  padding: 0;
+  
 }
 
 .header {
   margin-top: 72px;
   margin-bottom: 144px;
+  position: relative;
 }
 
-.blurb {
-  margin: 62px 0;
+.blurb {  
+  margin: 50px 0;
   font-size: 26px;
-  line-height: 32px;
-  font-style: italic;
+  line-height: 40px;
+}
+
+.action {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -30px;
+}
+
+.action .btn {
+  font-size: 24px;
 }
 
 .page-header {
@@ -65,14 +121,15 @@ footer p {
 }
 
 .page-header h1 {
-  font-family: depot-new-condensed, Univers, Helvetica sans-serif;
+  font-family: depot-new-condensed, Univers, Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-align: center;
   position: absolute;
+  color: white;
   top: -30px;
-  background-color: white;
+  background-color: #222;
   padding: 0 10px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 60px;
   min-width: 40px;
   
@@ -95,6 +152,26 @@ footer p {
   background: transparent url(../images/bubble_pointer.png) 0 100% no-repeat;
 }
 
+h3.bubble_idea {
+  padding-left: 40px;
+  background: transparent url(../images/bubble_idea.png) 0 50% no-repeat;
+}
+
+h3.bubble_design {
+  padding-left: 40px;
+  background: transparent url(../images/bubble_design.png) 0 50% no-repeat;
+}
+
+h3.bubble_location {
+  padding-left: 40px;
+  background: transparent url(../images/bubble_location.png) 0 50% no-repeat;
+}
+
+h3.bubble_developer {
+  padding-left: 40px;
+  background: transparent url(../images/bubble_developer.png) 0 50% no-repeat;
+}
+
 table {
   font-size: inherit;
 }
@@ -106,7 +183,7 @@ table td {
 
 .lang {
   position:absolute;
-  top:1em; right:2em;
+  top:-60px; right:0;
 }
 
 .lang ul, .lang li {
@@ -117,6 +194,7 @@ table td {
   float:left; padding-left:6px;
 }
 
-.lang .btn {
-  font-size:12pt; padding:6pt; background-color:#fff;
+.lang a {
+  font-family: depot-new-condensed, Univers, Helvetica, Arial, sans-serif;
+  text-decoration: none;
 }
