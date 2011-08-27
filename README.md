@@ -1,3 +1,3 @@
 # MAKE.OPENDATA.CH
 
-Under construction ...
+Web site for Swiss Open Data Hackday
