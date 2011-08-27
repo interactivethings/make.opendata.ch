@@ -15,18 +15,26 @@ a#dokuwiki__top {
 }
 
 div.dokuwiki div#sidebar {
-	padding-top:0; top:0px;
+	padding-top:0; top:0px; 
+}
+
+div#pagemeta {
+	color:#444;
 }
 
 div.dokuwiki div.navigation div.li a {
 	color: #e33 !important;
 }
 
+#content a.action {
+	color: #33e;
+}
+
 #sidebar .actions ul { list-style:none; }
 #sidebar .actions li { padding-bottom:2px; }
 
 #sidebar .actions a.action {
-	background: #a33 url(/lib/tpl/typo/images/alert-overlay.png) repeat-x; 
+	background: #e2353f url(/lib/tpl/typo/images/alert-overlay.png) repeat-x; 
 	display: inline-block; 
 	padding: 5px 10px 6px; 
 	color: #fff; 
