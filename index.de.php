@@ -43,6 +43,7 @@ require_once(DOKU_INC.'inc/init.php');
         </div>
         <div class="action">
           <a class="btn" href="doku.php?id=de:home&do=register&lang=de">Melde dich an</a>
+          <a class="btn" href="mailto:info@opendata.ch">Contact</a>
         </div>  
         <div class="lang">
           <ul>
@@ -135,6 +136,6 @@ require_once(DOKU_INC.'inc/init.php');
       </footer>
 
     </div> <!-- /container -->
-
+    <? include("analytics.html"); ?>
   </body>
 </html>

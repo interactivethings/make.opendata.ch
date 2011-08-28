@@ -71,6 +71,11 @@ h2 {
   color: #222;
 }
 
+h2 a, h3 a {
+  text-decoration: none;
+  color: white !important;
+}
+
 footer {
   border: none;
   margin-top: 72px;
