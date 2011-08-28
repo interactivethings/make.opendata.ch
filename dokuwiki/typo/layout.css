@@ -35,6 +35,8 @@ div.dokuwiki div.navigation div.li a {
   background-color: #3AA3D8;
 }
 
+.dokuwiki div.success { padding: 2em; width: 100%; font-weight: bold; }
+
 #sidebar .actions ul { list-style:none; }
 #sidebar .actions li { padding-bottom:2px; }
 
