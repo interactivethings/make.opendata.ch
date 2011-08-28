@@ -8,7 +8,7 @@ require_once(DOKU_INC.'inc/init.php');
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>MakeOpenData.ch</title>
+    <title>MAKE.OPENDATA.CH – 1er Open Data Camp de Suisse</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -32,32 +32,32 @@ require_once(DOKU_INC.'inc/init.php');
 
   <body>
       <div class="container">
-        
+  
         <div class="row header">
         <div class="span4">
-          <h1 id="logo"><img src="assets/app/images/make.opendata.ch_logo.png" width="220" height="225" alt="MAKE.OPENDATA.CH HACKATHON" /></h1>
+          <h1 id="logo"><img src="assets/app/images/make.opendata.ch_logo.png" alt="MAKE.OPENDATA.CH CAMP" /></h1>
         </div>
-        <div class="span10">
-          <p class="blurb">Le premier Open Data Hackathon de Suisse<br />30 septembre – 1 octobre 2011<br />Lausanne et Zürich</p>
+        <div class="span8">
+          <p class="blurb">Le premier Open Data Camp en Suisse<br />30 septembre – 1 octobre 2011<br />Lausanne et Zürich</p>
         </div>
-        
+        <div class="action">
+          <a class="btn" href="doku.php?id=fr:home&do=register&lang=fr">Inscription</a>
+        </div>  
         <div class="lang">
           <ul>
-          	<li><a class="btn" href="index.de.php">Deutsch</a></li>
-          	<li><a class="btn" href="index.en.php">English</a></li>
+          	<li><a href="index.de.php">DE</a></li>
+          	<li><a href="index.en.php">EN</a></li>
           </ul>
         </div>
+        
       </div>
       <div class="page-header">
         <h1>Quoi?<span></span></h1>
       </div>
       
-      <div class="row">
+      <div class="row section-what">
         <div class="span12 offset2">
           <?= p_wiki_xhtml("fr:what") ?>
-        
-          <p><a class="btn" href="doku.php?id=fr:home&do=register&lang=fr">Inscription</a>
-             <a class="btn" href="doku.php?id=fr:home&do=login&lang=fr">Accéder et contribuer</a></p>
         </div>
       </div>
       
@@ -65,7 +65,7 @@ require_once(DOKU_INC.'inc/init.php');
         <h1>Pour qui?<span></span></h1>
       </div>
       
-      <div class="row">
+      <div class="row section-who">
         <div class="span12 offset2">
          	<?= p_wiki_xhtml("fr:who") ?>
         </div>
@@ -75,7 +75,7 @@ require_once(DOKU_INC.'inc/init.php');
         <h1>Quand?<span></span></h1>
       </div>
       
-      <div class="row">
+      <div class="row section-when">
         <div class="span12 offset2">
 			<?= p_wiki_xhtml("fr:when") ?>
         </div>
@@ -85,7 +85,7 @@ require_once(DOKU_INC.'inc/init.php');
         <h1>Ou?<span></span></h1>
       </div>
       
-      <div class="row">
+      <div class="row section-where">
         <div class="span12 offset2">
           <?= p_wiki_xhtml("fr:where") ?>
         
@@ -98,15 +98,11 @@ require_once(DOKU_INC.'inc/init.php');
         <h1>Comment?<span></span></h1>
       </div>
       
-      <div class="row">
+      <div class="row section-how">
         <div class="span12 offset2">
           <?= p_wiki_xhtml("fr:how") ?>
           
-          <p><form name="ideate" method="get" action="#" onSubmit="document.location.href = 'doku.php?do=edit&id=idea:' + document.getElementById('ideate_id').value.replace(/[-\\.,_*+&#?^$[\](){}!=|]/g,'').replace(/\s/g,'_'); return false">
-          <b>Mon idée:</b>
-          <input name="id" id="ideate_id" type="text" maxlength="16" size="16" value="" />
-          <input type="submit" />
-          </form></p>
+          <!-- ideation -->
         </div>
       </div>
       
@@ -114,7 +110,7 @@ require_once(DOKU_INC.'inc/init.php');
         <h1>Sponsors<span></span></h1>
       </div>
       
-      <div class="row">
+      <div class="row section-sponsor">
         <div class="span12 offset2">
           <?= p_wiki_xhtml("fr:sponsor") ?>
         </div>
@@ -124,7 +120,7 @@ require_once(DOKU_INC.'inc/init.php');
         <h1>A propos<span></span></h1>
       </div>
 
-      <div class="row">
+      <div class="row section-about">
         <div class="span12 offset2">
           <?= p_wiki_xhtml("fr:about") ?>
         </div>

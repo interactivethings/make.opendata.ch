@@ -1,5 +1,5 @@
 body {
-	background:#fff url('/lib/tpl/typo/images/opendata-bg.gif') no-repeat top right !important;
+	background:#fff !important;
 }
 
 a#dokuwiki__top {
@@ -27,7 +27,12 @@ div.dokuwiki div.navigation div.li a {
 }
 
 #content a.action {
-	color: #33e;
+	color: #3AA3D8;
+  text-decoration: none;
+}
+
+.dokuwiki div.plugin_translation ul li a.wikilink1:link, .dokuwiki div.plugin_translation ul li a.wikilink1:hover, .dokuwiki div.plugin_translation ul li a.wikilink1:active, .dokuwiki div.plugin_translation ul li a.wikilink1:visited {
+  background-color: #3AA3D8;
 }
 
 #sidebar .actions ul { list-style:none; }
