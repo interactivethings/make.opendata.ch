@@ -92,7 +92,7 @@ class action_plugin_opendataregister extends DokuWiki_Action_Plugin {
 		$auth->triggerUserMod('modify', array($user, $changes));
 		
 		// append to note
-		$lang['regsuccess'] = $lang['regsuccess'] . " <br/> Anmeldung elforgreich / Vous êtes inscrit / You have registered for " . ucfirst($mygroup);
+		$lang['regsuccess'] = $lang['regsuccess'] . " <br/> Anmeldung erfolgreich / Vous êtes inscrit / You have registered for " . ucfirst($mygroup);
 
     }
 
