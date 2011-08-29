@@ -8,7 +8,7 @@ require_once(DOKU_INC.'inc/init.php');
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>MakeOpenData.ch</title>
+    <title>MAKE.OPENDATA.CH – Swiss Open Data Camp</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -32,32 +32,33 @@ require_once(DOKU_INC.'inc/init.php');
 
   <body>
       <div class="container">
-        
+  
         <div class="row header">
         <div class="span4">
-          <h1 id="logo"><img src="assets/app/images/make.opendata.ch_logo.png" width="220" height="225" alt="MAKE.OPENDATA.CH HACKATHON" /></h1>
+          <h1 id="logo"><img src="assets/app/images/make.opendata.ch_logo.png" alt="MAKE.OPENDATA.CH CAMP" /></h1>
         </div>
-        <div class="span10">
+        <div class="span8">
           <p class="blurb">The first Open Data Hackathon in Switzerland<br />30 September – 1 October 2011<br />Zürich and Lausanne</p>
         </div>
-        
+        <div class="action">
+          <a class="btn" href="doku.php?id=en:home&do=register&lang=de">Register</a>
+          <a class="btn" href="mailto:info@opendata.ch">Contact</a>
+        </div>  
         <div class="lang">
           <ul>
-          	<li><a class="btn" href="index.fr.php">Français</a></li>
-          	<li><a class="btn" href="index.de.php">Deutsch</a></li>
+          	<li><a href="index.de.php">DE</a></li>
+          	<li><a href="index.fr.php">FR</a></li>
           </ul>
         </div>
+        
       </div>
       <div class="page-header">
         <h1>What?<span></span></h1>
       </div>
       
-      <div class="row">
+      <div class="row section-what">
         <div class="span12 offset2">
           <?= p_wiki_xhtml("en:what") ?>
-        
-	      <p><a class="btn" href="doku.php?id=en:home&do=register&lang=en">Register</a>
-	         <a class="btn" href="doku.php?id=en:home&do=login&lang=en">Login and contribute</a></p>
 	    </div>
       </div>
       
@@ -65,7 +66,7 @@ require_once(DOKU_INC.'inc/init.php');
         <h1>For whom?<span></span></h1>
       </div>
       
-      <div class="row">
+      <div class="row section-who">
         <div class="span12 offset2">
          	<?= p_wiki_xhtml("en:who") ?>
         </div>
@@ -75,7 +76,7 @@ require_once(DOKU_INC.'inc/init.php');
         <h1>When?<span></span></h1>
       </div>
       
-      <div class="row">
+      <div class="row section-when">
         <div class="span12 offset2">
 			<?= p_wiki_xhtml("en:when") ?>
         </div>
@@ -85,7 +86,7 @@ require_once(DOKU_INC.'inc/init.php');
         <h1>Where?<span></span></h1>
       </div>
       
-      <div class="row">
+      <div class="row section-where">
         <div class="span12 offset2">
           <?= p_wiki_xhtml("en:where") ?>
         
@@ -98,15 +99,11 @@ require_once(DOKU_INC.'inc/init.php');
         <h1>How?<span></span></h1>
       </div>
       
-      <div class="row">
+      <div class="row section-how">
         <div class="span12 offset2">
           <?= p_wiki_xhtml("en:how") ?>
           
-          <p><form name="ideate" method="get" action="#" onSubmit="document.location.href = 'doku.php?do=edit&id=idea:' + document.getElementById('ideate_id').value.replace(/[-\\.,_*+&#?^$[\](){}!=|]/g,'').replace(/\s/g,'_'); return false">
-          <b>My idea:</b>
-          <input name="id" id="ideate_id" type="text" maxlength="16" size="16" value="" />
-          <input type="submit" />
-          </form></p>
+          <!-- ideation -->
         </div>
       </div>
       
@@ -114,7 +111,7 @@ require_once(DOKU_INC.'inc/init.php');
         <h1>Sponsors<span></span></h1>
       </div>
       
-      <div class="row">
+      <div class="row section-sponsor">
         <div class="span12 offset2">
           <?= p_wiki_xhtml("en:sponsor") ?>
         </div>
@@ -124,7 +121,7 @@ require_once(DOKU_INC.'inc/init.php');
         <h1>About us<span></span></h1>
       </div>
 
-      <div class="row">
+      <div class="row section-about">
         <div class="span12 offset2">
           <?= p_wiki_xhtml("en:about") ?>
         </div>
@@ -138,6 +135,6 @@ require_once(DOKU_INC.'inc/init.php');
       </footer>
 
     </div> <!-- /container -->
-
+    <? include("analytics.html"); ?>
   </body>
 </html>

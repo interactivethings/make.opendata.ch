@@ -68,6 +68,7 @@ class action_plugin_opendataregister extends DokuWiki_Action_Plugin {
 	    global $conf;
 		global $USERINFO;
 		global $auth;
+		global $lang;
 		
 		if (!($this->infos && $event->data['type'] == 'create')) return;
 		   
@@ -89,6 +90,9 @@ class action_plugin_opendataregister extends DokuWiki_Action_Plugin {
 		// add to the group
 		$changes['grps'] = array('user', $mygroup);
 		$auth->triggerUserMod('modify', array($user, $changes));
+		
+		// append to note
+		$lang['regsuccess'] = $lang['regsuccess'] . " <br/> Anmeldung erfolgreich / Vous êtes inscrit / You have registered for " . ucfirst($mygroup);
 
     }
 

@@ -7,7 +7,7 @@ body {
   
 }
 
-p {
+p, .row td {
   color: white;
   font-size: 18px;
   line-height: 24px;
@@ -60,7 +60,7 @@ a.btn:hover {
   text-shadow: none;
 }
 
-h2, h3 {
+h2, h3, .row th {
   font-family: depot-new-condensed, Univers, Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #fff;
@@ -157,32 +157,43 @@ footer p {
   background: transparent url(../images/bubble_pointer.png) 0 100% no-repeat;
 }
 
-h3.bubble_idea {
+.row table, .row tbody, .row td, .row th {
+  border: none;
+}
+
+.row th {
+  height: 40px;
+}
+
+.section-who td { width:33%;}
+
+.section-who th.col0 {
   padding-left: 40px;
   background: transparent url(../images/bubble_idea.png) 0 50% no-repeat;
 }
 
-h3.bubble_design {
+.section-who th.col1 {
   padding-left: 40px;
   background: transparent url(../images/bubble_design.png) 0 50% no-repeat;
 }
 
-h3.bubble_location {
-  padding-left: 40px;
-  background: transparent url(../images/bubble_location.png) 0 50% no-repeat;
-}
-
-h3.bubble_developer {
+.section-who th.col2 {
   padding-left: 40px;
   background: transparent url(../images/bubble_developer.png) 0 50% no-repeat;
 }
 
+.section-where td { width:50%;}
+
+.section-where th {
+  padding-left: 40px;
+  background: transparent url(../images/bubble_location.png) 0 50% no-repeat;
+}
+
 table {
-  font-size: inherit;
+  font: inherit;
 }
 
 table td {
-  line-height: inherit;
   vertical-align: top;
 }
 
