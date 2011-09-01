@@ -225,10 +225,8 @@ table td {
 .twitter a {
   padding:20px 0px 20px 50px;
   background: transparent url(../images/twitter_newbird_white_sm.png) 0 50% no-repeat;
-  font-family: depot-new-condensed, Univers, Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family: 'HelveticaNeueW02-67MdCn 694060', Helvetica, Arial, sans-serif;
   text-decoration: none;
-  font-size: 18px;
 }
 
 .twitter a:hover {
