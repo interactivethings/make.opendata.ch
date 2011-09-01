@@ -26,8 +26,7 @@ require_once(DOKU_INC.'inc/init.php');
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
     
-    <script type="text/javascript" src="http://use.typekit.com/ebr0trq.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="http://fast.fonts.com/jsapi/39ffadfd-88c3-4409-958c-a892f580a429.js"></script> 
   </head>
 
   <body>
@@ -41,7 +40,7 @@ require_once(DOKU_INC.'inc/init.php');
           <p class="blurb">The first Open Data Hackathon in Switzerland<br />30 September – 1 October 2011<br />Zürich and Lausanne</p>
         </div>
         <div class="action">
-          <a class="btn" href="doku.php?id=en:home&do=register&lang=de">Register</a>
+          <a class="btn" href="doku.php?id=en:home&do=register&lang=en">Register</a>
           <a class="btn" href="mailto:info@opendata.ch">Contact</a>
         </div>  
         <div class="lang">
@@ -50,7 +49,9 @@ require_once(DOKU_INC.'inc/init.php');
           	<li><a href="index.fr.php">FR</a></li>
           </ul>
         </div>
-        
+        <div class="twitter">
+	      <a href="http://twitter.com/OpenDataCH" target="_blank">@OpenDataCH</a>
+	    </div>
       </div>
       <div class="page-header">
         <h1>What?<span></span></h1>

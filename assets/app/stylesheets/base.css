@@ -34,7 +34,7 @@ a:hover {
 }
 
 a.btn {
-  font-family: depot-new-condensed, Univers, Helvetica, Arial, sans-serif;
+  font-family: 'HelveticaNeueW02-67MdCn 694060', Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #222;
   text-decoration: none;
@@ -61,7 +61,7 @@ a.btn:hover {
 }
 
 h2, h3, .row th {
-  font-family: depot-new-condensed, Univers, Helvetica, Arial, sans-serif;
+  font-family: 'HelveticaNeueW02-67MdCn 694060', Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #fff;
   margin: 12px 0;
@@ -126,7 +126,7 @@ footer p {
 }
 
 .page-header h1 {
-  font-family: depot-new-condensed, Univers, Helvetica, Arial, sans-serif;
+  font-family: 'HelveticaNeueW02-67MdCn 694060', Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-align: center;
   position: absolute;
@@ -211,6 +211,27 @@ table td {
 }
 
 .lang a {
-  font-family: depot-new-condensed, Univers, Helvetica, Arial, sans-serif;
+  font-family: 'HelveticaNeueW02-67MdCn 694060', Helvetica, Arial, sans-serif;
   text-decoration: none;
+}
+
+.twitter {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -100px;
+}
+
+.twitter a {
+  padding:20px 0px 20px 50px;
+  background: transparent url(../images/twitter_newbird_white_sm.png) 0 50% no-repeat;
+  font-family: depot-new-condensed, Univers, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.twitter a:hover {
+  color:white;
+  background-image: url(../images/twitter_newbird_blue_sm.png);
 }
