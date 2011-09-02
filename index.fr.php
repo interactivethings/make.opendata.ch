@@ -78,8 +78,6 @@ require_once(DOKU_INC.'inc/init.php');
           </ul>
         </div>
       </div>
-        
-      </div>
       <div class="page-header">
         <h1>Quoi<span></span></h1>
       </div>
