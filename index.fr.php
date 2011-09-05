@@ -66,7 +66,7 @@ require_once(DOKU_INC.'inc/init.php');
               </span>
               <div id="contact_buttons">
                 <span id="contact_twitter" class="contact_button">
-                  <a href="http://twitter.com/makeopendata">Twitter</a>
+                  <a href="http://twitter.com/opendataCH">Twitter</a>
                 </span>
                 <span id="contact_email" class="contact_button">
                   <a href="mailto:info@opendata.ch">Email</a>
