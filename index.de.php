@@ -110,22 +110,22 @@ require_once(DOKU_INC.'inc/init.php');
       </div>
       
       <div class="page-header">
-        <h1>Wo<span></span></h1>
-      </div>
-      
-      <div class="row section-where">
-        <div class="span14 offset2">
-          <?= p_wiki_xhtml("de:where") ?>
-        </div>
-      </div>
-      
-      <div class="page-header">
         <h1>Wie<span></span></h1>
       </div>
       
       <div class="row section-how">
         <div class="span14 offset2">
           <?= p_wiki_xhtml("de:how") ?>
+        </div>
+      </div>
+      
+      <div class="page-header">
+        <h1>Wo<span></span></h1>
+      </div>
+      
+      <div class="row section-where">
+        <div class="span14 offset2">
+          <?= p_wiki_xhtml("de:where") ?>
         </div>
       </div>
       

@@ -10,7 +10,7 @@ body {
   background-color: #E2353F;
   color: #000;
   font-family: Times, "Times New Roman", serif;
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
   
 }
@@ -24,7 +24,7 @@ p{
 }
 .row td {
   color: inherit;
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
   line-height: 1.5em;
   margin-bottom: 1.5em;
@@ -108,7 +108,7 @@ table td {
 }
 #blurb {  
   margin: 0px 0 0;
-  font-size: 1.5em;
+  font-size: 24px;
   line-height: 1.2;
 }
 #utilities {
@@ -186,7 +186,7 @@ table td {
   width: 390px;
 }
 #utilities #contact_slider {
-  width: 50px;
+  width: 60px;
 }
 #utilities #contact_slider .slide_label {
   float: left;
