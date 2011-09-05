@@ -214,3 +214,22 @@ table td {
   font-family: 'HelveticaNeueW02-67MdCn 694060', Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
+
+.twitter {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -100px;
+}
+
+.twitter a {
+  padding:20px 0px 20px 50px;
+  background: transparent url(../images/twitter_newbird_white_sm.png) 0 50% no-repeat;
+  font-family: 'HelveticaNeueW02-67MdCn 694060', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+.twitter a:hover {
+  color:white;
+  background-image: url(../images/twitter_newbird_blue_sm.png);
+}

@@ -40,7 +40,7 @@ require_once(DOKU_INC.'inc/init.php');
           <p class="blurb">The first Open Data Hackathon in Switzerland<br />30 September – 1 October 2011<br />Zürich and Lausanne</p>
         </div>
         <div class="action">
-          <a class="btn" href="doku.php?id=en:home&do=register&lang=de">Register</a>
+          <a class="btn" href="doku.php?id=en:home&do=register&lang=en">Register</a>
           <a class="btn" href="mailto:info@opendata.ch">Contact</a>
         </div>  
         <div class="lang">
@@ -49,7 +49,9 @@ require_once(DOKU_INC.'inc/init.php');
           	<li><a href="index.fr.php">FR</a></li>
           </ul>
         </div>
-        
+        <div class="twitter">
+	      <a href="http://twitter.com/OpenDataCH" target="_blank">@OpenDataCH</a>
+	    </div>
       </div>
       <div class="page-header">
         <h1>What?<span></span></h1>
@@ -89,7 +91,7 @@ require_once(DOKU_INC.'inc/init.php');
         <div class="span12 offset2">
           <?= p_wiki_xhtml("en:where") ?>
         
-        	<p><a class="btn" href="doku.php?id=en:home&do=register&lang=en">Register now</a></p>
+          <center><a class="btn" href="doku.php?id=en:home&do=register&lang=en">Register now</a></center>
 		    
         </div>
       </div>
