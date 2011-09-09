@@ -51,12 +51,14 @@ a:hover {
   color: #fff;
 }
 h2,
-h3,
 .row th {
   font-family: 'HelveticaNeueW02-67MdCn 694060', Helvetica, Arial, sans-serif;
+  font-size: 1em;
   font-weight: normal;
   color: #fff;
+  height: 40px;
   margin: 12px 0 0;
+  padding: 10px 10px 0 0;
 }
 h2 a,
 h3 a {
@@ -69,15 +71,12 @@ h3 a {
 .row th {
   border: none;
 }
-.row th {
-  height: 40px;
-  padding-bottom: 0;
-}
 table {
   font: inherit;
 }
 table td {
   vertical-align: top;
+  padding: 10px 20px 0 0;
 }
 /* STRUCTURE
 /////////////////////////////////////////////////////////////////*/
@@ -111,6 +110,8 @@ table td {
   font-size: 24px;
   line-height: 1.2;
 }
+/* UTILITIES
+/////////////////////////////////////////////////////////////////*/
 #utilities {
   font-size: 14px;
   position:absolute;
@@ -204,7 +205,8 @@ table td {
 #utilities #contact_slider:hover {
   width: 260px;
 }
-
+/* ACTION
+/////////////////////////////////////////////////////////////////*/
 #action {
   position: absolute;
   right: 0;
@@ -213,6 +215,8 @@ table td {
 #action a.btn {
   font-size: 24px;
 }
+/* BUTTON
+/////////////////////////////////////////////////////////////////*/
 a.btn {
   font-family: 'HelveticaNeueW02-67MdCn 694060', Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -239,6 +243,8 @@ a.btn:hover {
   background: #222;
   text-shadow: none;
 }
+/* HEADLINES
+/////////////////////////////////////////////////////////////////*/
 .page-header {
   margin: 50px 0 24px;
   position: relative;
@@ -284,6 +290,8 @@ a.btn:hover {
   width: 10px;
   background: transparent url(../images/bubble_pointer.png) 0 100% no-repeat;
 }
+/* SECTIONS
+/////////////////////////////////////////////////////////////////*/
 .section-who .col0,
 .section-who .col1,
 .section-who .col2{
@@ -307,7 +315,7 @@ a.btn:hover {
 }
 .section-when th.col0 {
   padding-left: 40px;
-  background: transparent url(../images/bubble_31.png) 0 50% no-repeat;
+  background: transparent url(../images/bubble_30.png) 0 50% no-repeat;
 }
 .section-when th.col1 {
   padding-left: 40px;
