@@ -37,11 +37,11 @@ require_once(DOKU_INC.'inc/init.php');
         </div>
         <div class="span8">
           <h2 id="date">30 September – 1 October 2011</h2>
-          <p id="blurb">The first Open Data Hackathon in Switzerland.</p>
+          <p id="blurb">The first Open Data Camp in Switzerland brings together thinker and creator to collectively make change happen.</p>
         </div>
-        <div id="action">
+        <!-- <div id="action">
           <a class="btn" href="doku.php?id=de:home&do=register&lang=en">Register</a>
-        </div>
+        </div> -->
         <div id="utilities">
           <ul>
             <li id="share_slider" class="slider">
@@ -109,22 +109,22 @@ require_once(DOKU_INC.'inc/init.php');
       </div>
       
       <div class="page-header">
-        <h1>How<span></span></h1>
-      </div>
-      
-      <div class="row section-how">
-        <div class="span14 offset2">
-          <?= p_wiki_xhtml("en:how") ?>
-        </div>
-      </div>
-      
-      <div class="page-header">
         <h1>Where<span></span></h1>
       </div>
       
       <div class="row section-where">
         <div class="span14 offset2">
           <?= p_wiki_xhtml("en:where") ?>
+        </div>
+      </div>
+      
+      <div class="page-header">
+        <h1>About us<span></span></h1>
+      </div>
+
+      <div class="row section-about">
+        <div class="span14 offset2">
+          <?= p_wiki_xhtml("en:about") ?>
         </div>
       </div>
       
@@ -138,15 +138,6 @@ require_once(DOKU_INC.'inc/init.php');
         </div>
       </div>
       
-      <div class="page-header">
-        <h1>About us<span></span></h1>
-      </div>
-
-      <div class="row section-about">
-        <div class="span14 offset2">
-          <?= p_wiki_xhtml("en:about") ?>
-        </div>
-      </div>
     </div><!-- #content -->
     <div id="footer">
       <p>&copy; make.opendata.ch</p>

@@ -102,8 +102,10 @@ table td {
   
 }
 #date{
-  margin: 35px 0 0;
+  margin: 25px 0 0;
   font-family: 'HelveticaNeueW02-67MdCn 694060', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  height: auto;
 }
 #blurb {  
   margin: 0px 0 0;
@@ -133,6 +135,8 @@ table td {
   font-family: 'HelveticaNeueW02-67MdCn 694060', Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
+/* SLIDER
+/////////////////////////////////////////////////////////////////*/
 #utilities .slider {
   overflow: hidden;
   position: relative;
@@ -149,6 +153,8 @@ table td {
 #utilities .slider:hover .slide_label:after{
   content:":";
 }
+/* SHARE
+/////////////////////////////////////////////////////////////////*/
 #utilities #share_slider {
   width: 40px;
 }
@@ -186,6 +192,8 @@ table td {
 #utilities #share_slider:hover {
   width: 390px;
 }
+/* CONTACT
+/////////////////////////////////////////////////////////////////*/
 #utilities #contact_slider {
   width: 60px;
 }
@@ -196,14 +204,14 @@ table td {
   left: 70px;
   overflow: hidden;
   position: absolute;
-  width: 260px;
+  width: 200px;
 }
 #utilities #contact_slider #contact_buttons span.contact_button {
   float: left;
   padding-left: 20px;
 }
 #utilities #contact_slider:hover {
-  width: 260px;
+  width: 200px;
 }
 /* ACTION
 /////////////////////////////////////////////////////////////////*/
@@ -246,7 +254,7 @@ a.btn:hover {
 /* HEADLINES
 /////////////////////////////////////////////////////////////////*/
 .page-header {
-  margin: 50px 0 24px;
+  margin: 30px 0;
   position: relative;
   border-bottom: 1px solid #BF3338;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -309,10 +317,12 @@ a.btn:hover {
   padding-left: 40px;
   background: transparent url(../images/bubble_developer.png) 0 50% no-repeat;
 }
+
 .section-when .col0,
 .section-when .col1 { 
   width:50%;
 }
+/*
 .section-when th.col0 {
   padding-left: 40px;
   background: transparent url(../images/bubble_30.png) 0 50% no-repeat;
@@ -321,6 +331,13 @@ a.btn:hover {
   padding-left: 40px;
   background: transparent url(../images/bubble_01.png) 0 50% no-repeat;
 }
+*/
+
+.section-how .col0,
+.section-how .col1 { 
+  width:50%;
+}
+
 .section-where .col0,
 .section-where .col1 { 
   width:50%;
@@ -329,11 +346,14 @@ a.btn:hover {
   padding-left: 40px;
   background: transparent url(../images/bubble_location.png) 0 50% no-repeat;
 }
+
 .section-sponsor .col0,
 .section-sponsor .col1,
-.section-sponsor .col2{
-  width: 33%;
+.section-sponsor .col2,
+.section-sponsor .col3{
+  width: 25%;
 }
+
 .section-about .col0{
   width: 66%;
 }

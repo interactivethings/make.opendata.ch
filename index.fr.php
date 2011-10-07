@@ -39,9 +39,9 @@ require_once(DOKU_INC.'inc/init.php');
           <h2 id="date">30 septembre – 1 octobre 2011</h2>
           <p id="blurb">Le premier Open Data Camp en Suisse.</p>
         </div>
-        <div id="action">
+        <!-- <div id="action">
           <a class="btn" href="doku.php?id=de:home&do=register&lang=fr">Inscription</a>
-        </div>
+        </div> -->
         <div id="utilities">
           <ul>
             <li id="share_slider" class="slider">
@@ -105,16 +105,6 @@ require_once(DOKU_INC.'inc/init.php');
       <div class="row section-when">
         <div class="span14 offset2">
           <?= p_wiki_xhtml("fr:when") ?>
-        </div>
-      </div>
-      
-      <div class="page-header">
-        <h1>Comment<span></span></h1>
-      </div>
-      
-      <div class="row section-how">
-        <div class="span14 offset2">
-          <?= p_wiki_xhtml("fr:how") ?>
         </div>
       </div>
       
