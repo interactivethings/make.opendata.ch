@@ -1,3 +1,3 @@
-# MAKE.OPENDATA.CH
+# make.opendata.ch
 
-Web site for Swiss Open Data Hackday
+Website for the first Open Data Camp in Switzerland.
