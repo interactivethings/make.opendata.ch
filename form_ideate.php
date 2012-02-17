@@ -5,19 +5,19 @@ $txtVisit = "";
 
 switch ($lang) {
 case "en":
-	$txtHead = "My idea:";
+	$txtHead = "My idea";
 	$txtButton = "Submit";
 	$txtVisit = "Visit the wiki";
 	break;	
 case "fr":
-	$txtHead = "Mon idée:";
-	$txtButton = "Envoyer";
-	$txtVisit = "Ouvrir le wiki";
+	$txtHead = "";
+	$txtButton = "";
+	$txtVisit = "";
 	break;
 default:
-	$txtHead = "Meine Idee:";
-	$txtButton = "Senden";
-	$txtVisit = "Wiki besuchen";
+	$txtHead = "";
+	$txtButton = "";
+	$txtVisit = "";
 	break;
 }
 

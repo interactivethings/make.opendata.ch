@@ -1,4 +1,4 @@
-l<?php
+<?php
 
 /* DokuWiki setup */
 if(!defined('DOKU_INC')) define('DOKU_INC',dirname(__FILE__).'/');
@@ -39,10 +39,9 @@ require_once(DOKU_INC.'inc/init.php');
           <h2 id="date">30 September – 1 October 2011</h2>
           <p id="blurb">The first Open Data Camp in Switzerland brings together thinker and creator to collectively make change happen.</p>
         </div>
-        <div class="action">
-          <a class="btn" href="doku.php?id=en:home&do=register&lang=en">Register</a>
-          <a class="btn" href="mailto:info@opendata.ch">Contact</a>
-        </div>  
+        <!-- <div id="action">
+          <a class="btn" href="doku.php?id=de:home&do=register&lang=en">Register</a>
+        </div> -->
         <div id="utilities">
           <ul>
             <li id="share_slider" class="slider">
@@ -78,9 +77,6 @@ require_once(DOKU_INC.'inc/init.php');
             <li class="language"><a href="index.fr.php">FR</a></li>
           </ul>
         </div>
-        <div class="twitter">
-	        <a href="http://twitter.com/OpenDataCH" target="_blank">@OpenDataCH</a>
-	      </div>
       </div>
       <div class="page-header">
         <h1>What<span></span></h1>
@@ -119,7 +115,6 @@ require_once(DOKU_INC.'inc/init.php');
       <div class="row section-where">
         <div class="span14 offset2">
           <?= p_wiki_xhtml("en:where") ?>
-          <center><a class="btn" href="doku.php?id=en:home&do=register&lang=en">Register now</a></center>
         </div>
       </div>
       
