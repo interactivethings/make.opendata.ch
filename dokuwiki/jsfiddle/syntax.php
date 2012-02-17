@@ -112,54 +112,12 @@ class syntax_plugin_jsFiddle extends DokuWiki_Syntax_Plugin {
     * @see render()
     */
     function connectTo($mode) {
-      $this->Lexer->addEntryPattern('<jsfiddle.*?>)',$mode,'plugin_jsFiddle'); 
+      $this->Lexer->addEntryPattern('<JSFIDDLE.*?>)',$mode,'plugin_jsFiddle'); 
     }
  
-   /**
-    * Handler to prepare matched data for the rendering process.
-    *
-    * <p>
-    * The <tt>$aState</tt> parameter gives the type of pattern
-    * which triggered the call to this method:
-    * </p>
-    * <dl>
-    * <dt>DOKU_LEXER_ENTER</dt>
-    * <dd>a pattern set by <tt>addEntryPattern()</tt></dd>
-    * <dt>DOKU_LEXER_MATCHED</dt>
-    * <dd>a pattern set by <tt>addPattern()</tt></dd>
-    * <dt>DOKU_LEXER_EXIT</dt>
-    * <dd> a pattern set by <tt>addExitPattern()</tt></dd>
-    * <dt>DOKU_LEXER_SPECIAL</dt>
-    * <dd>a pattern set by <tt>addSpecialPattern()</tt></dd>
-    * <dt>DOKU_LEXER_UNMATCHED</dt>
-    * <dd>ordinary text encountered within the plugin's syntax mode
-    * which doesn't match any pattern.</dd>
-    * </dl>
-    * @param $aMatch String The text matched by the patterns.
-    * @param $aState Integer The lexer state for the match.
-    * @param $aPos Integer The character position of the matched text.
-    * @param $aHandler Object Reference to the Doku_Handler object.
-    * @return Integer The current lexer state for the match.
-    * @public
-    * @see render()
-    * @static
-    */
     function handle($match, $state, $pos, &$handler){
-        switch ($state) {
-          case DOKU_LEXER_ENTER : 
-            $fiddleid = substr($match, 9, -1);
-            $fiddleid = $this->_isValid($fiddleid);
-            return array($state, array($fiddleid));
-          case DOKU_LEXER_MATCHED :
-            break;
-          case DOKU_LEXER_UNMATCHED :
-            break;
-          case DOKU_LEXER_EXIT :
-            break;
-          case DOKU_LEXER_SPECIAL :
-            break;
-        }
-        return array();
+        $match = substr($match,10,-1);
+        return array(strtolower($match));
     }
  
    /**
@@ -182,12 +140,8 @@ class syntax_plugin_jsFiddle extends DokuWiki_Syntax_Plugin {
     * @see handle()
     */
     function render($mode, &$renderer, $data) {
-        if($mode == 'xhtml'){
-            $renderer->doc .= '<a href="http://twitter.com/share" class="twitter-share-button" data-text="I ♥ @OpenDataCH" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>';
-            // ptype = 'block'
-            return true;
-        }
-        return false;
+        $renderer->doc .= '' . $data;
+        return true;
     }
 }
  
