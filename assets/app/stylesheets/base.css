@@ -1,7 +1,7 @@
 /*
 BASE STYLESHEET
 Description:  Context and page specific overrides
-Author:       Interactive Things
+Author:   Interactive Things
 */
 
 /* GENERAL
@@ -317,27 +317,14 @@ a.btn:hover {
   padding-left: 40px;
   background: transparent url(../images/bubble_developer.png) 0 50% no-repeat;
 }
-
 .section-when .col0,
 .section-when .col1 {
   width:50%;
 }
-/*
-.section-when th.col0 {
-  padding-left: 40px;
-  background: transparent url(../images/bubble_30.png) 0 50% no-repeat;
-}
-.section-when th.col1 {
-  padding-left: 40px;
-  background: transparent url(../images/bubble_01.png) 0 50% no-repeat;
-}
-*/
-
 .section-how .col0,
 .section-how .col1 {
   width:50%;
 }
-
 .section-where .col0,
 .section-where .col1 {
   width:50%;
@@ -346,17 +333,100 @@ a.btn:hover {
   padding-left: 40px;
   background: transparent url(../images/bubble_location.png) 0 50% no-repeat;
 }
-
 .section-sponsor .col0,
 .section-sponsor .col1,
 .section-sponsor .col2,
 .section-sponsor .col3{
   width: 25%;
 }
-
 .section-about .col0{
   width: 66%;
 }
 .section-about .col1{
   width: 33%;
 }
+
+/* BUTTONS
+//
+// Usage: <span class="button"><a class="icon white-arrow-right">Foo</a></span>
+//
+/////////////////////////////////////////////////////////////////*/
+
+.button {
+
+  display: inline-block;
+
+  -moz-transition: all 100ms ease-out;
+  -webkit-transition: all 100ms ease-out;
+  -o-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+
+  -webkit-border-radius: 15px 15px;
+  -moz-border-radius: 15px / 15px;
+  -o-border-radius: 15px / 15px;
+  -ms-border-radius: 15px / 15px;
+  -khtml-border-radius: 15px / 15px;
+  border-radius: 15px / 15px;
+
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(51,51,51,0.9)), color-stop(100%, rgba(0,0,0,0.9)));
+  background-image: -webkit-linear-gradient(top, rgba(51,51,51,0.9),rgba(0,0,0,0.9));
+  background-image: -moz-linear-gradient(top, rgba(51,51,51,0.9),rgba(0,0,0,0.9));
+  background-image: -o-linear-gradient(top, rgba(51,51,51,0.9),rgba(0,0,0,0.9));
+  background-image: -ms-linear-gradient(top, rgba(51,51,51,0.9),rgba(0,0,0,0.9));
+  background-image: linear-gradient(top, rgba(51,51,51,0.9),rgba(0,0,0,0.9));
+
+  color: #fff;
+  text-align: center;
+
+  padding:2px 15px 4px
+}
+.button:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.9)), color-stop(100%, rgba(51,51,51,0.9)));
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.9), rgba(51,51,51,0.9));
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.9), rgba(51,51,51,0.9));
+  background-image: -o-linear-gradient(top, rgba(0,0,0,0.9), rgba(51,51,51,0.9));
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.9), rgba(51,51,51,0.9));
+  background-image: linear-gradient(top, rgba(0,0,0,0.9), rgba(51,51,51,0.9));
+}
+.button a, .button:hover a{
+  color: #fff;
+  text-decoration: none
+}
+.button a.icon {
+  display: block;
+  text-indent: 25px;
+  background: url('/assets/app/images/icons.png') no-repeat;
+}
+.icon.white-arrow-right {background-position: 0 -176px;}
+.icon.personal {background-position: 0 -1015px}
+.icon.technical {background-position: 0 -976px}
+.icon.phone {background-position: 0 -1056px}
+.icon.email {background-position: 0 -726px}
+.icon.apply {background-position: 0 -718px}
+.icon.responsibility {background-position: 0 -428px}
+.icon.offer {background-position: 0 -785px}
+.icon.vcard {background-position: 0 -401px}
+.icon.date {background-position: 0 -470px}
+.icon.pictures {background-position: 0 -1122px}
+.icon.bubble {background-position: 0 -363px}
+.icon.magnifier {background-position: 0 -684px}
+.icon.wheel {background-position: 0 -1401px}
+.icon.arrow_right {background-position: 0 -141px}
+.icon.number_1 {background-position: 0 -824px}
+.icon.number_2 {background-position: 0 -862px}
+.icon.number_3 {background-position: 0 -900px}
+.icon.number_4 {background-position: 0 -938px}
+.icon.map {background-position: 5px -612px}
+.icon.twitter {background-position: 0 -1230px}
+.icon.arrow_up {background-position: 20% -216px}
+.icon.arrow_down {background-position: 0 5px}
+.icon.list {background-position: 40% -581px}
+.icon.heart {background-position: 0 -508px}
+.icon.service {background-position: 0 -1158px}
+.icon.link {background-position: 0 -543px}
+.icon.article {background-position: 0 -292px}
+.icon.pen {background-position: 0 -980px}
+.icon.bookmark {background-position: 0 -329px}
+.icon.website {background-position: 0 -1368px}
+.icon.tumblr {background-position: 0 -1193px}
+.icon.videochannel {background-position: 0 -1331px}
