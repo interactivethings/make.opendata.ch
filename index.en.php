@@ -20,13 +20,12 @@ require_once(DOKU_INC.'inc/init.php');
     <link href="assets/vendor/bootstrap/bootstrap-1.1.0.min.css" rel="stylesheet">
     <link href="assets/app/stylesheets/base.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" /> 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <!-- <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
         <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png"> -->
-    
-    <script type="text/javascript" src="http://fast.fonts.com/jsapi/39ffadfd-88c3-4409-958c-a892f580a429.js"></script>
+
   </head>
 
   <body>
@@ -81,43 +80,43 @@ require_once(DOKU_INC.'inc/init.php');
       <div class="page-header">
         <h1>What<span></span></h1>
       </div>
-      
+
       <div class="row section-what">
         <div class="span14 offset2">
           <?= p_wiki_xhtml("en:what") ?>
 	    </div>
       </div>
-      
+
       <div class="page-header">
         <h1>Who<span></span></h1>
       </div>
-      
+
       <div class="row section-who">
         <div class="span14 offset2">
          	<?= p_wiki_xhtml("en:who") ?>
         </div>
       </div>
-      
+
       <div class="page-header">
         <h1>When<span></span></h1>
       </div>
-      
+
       <div class="row section-when">
         <div class="span14 offset2">
           <?= p_wiki_xhtml("en:when") ?>
         </div>
       </div>
-      
+
       <div class="page-header">
         <h1>Where<span></span></h1>
       </div>
-      
+
       <div class="row section-where">
         <div class="span14 offset2">
           <?= p_wiki_xhtml("en:where") ?>
         </div>
       </div>
-      
+
       <div class="page-header">
         <h1>About us<span></span></h1>
       </div>
@@ -127,17 +126,17 @@ require_once(DOKU_INC.'inc/init.php');
           <?= p_wiki_xhtml("en:about") ?>
         </div>
       </div>
-      
+
       <div class="page-header">
         <h1>Sponsors<span></span></h1>
       </div>
-      
+
       <div class="row section-sponsor">
         <div class="span14 offset2">
           <?= p_wiki_xhtml("en:sponsor") ?>
         </div>
       </div>
-      
+
     </div><!-- #content -->
     <div id="footer">
       <p>&copy; make.opendata.ch</p>
