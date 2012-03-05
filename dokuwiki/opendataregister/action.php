@@ -85,7 +85,7 @@ class action_plugin_opendataregister extends DokuWiki_Action_Plugin {
 		
 		// check group match
 		$userinfo = $auth->getUserData($user);
-		if (!($userinfo['grps'][0] == "user")) die('not a user');
+		// if (!($userinfo['grps'][0] == "user")) die('not a user');
 		
 		// add to the group
 		$changes['grps'] = array('user', $mygroup);

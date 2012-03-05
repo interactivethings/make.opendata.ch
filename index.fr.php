@@ -20,13 +20,11 @@ require_once(DOKU_INC.'inc/init.php');
     <link href="assets/vendor/bootstrap/bootstrap-1.1.0.min.css" rel="stylesheet">
     <link href="assets/app/stylesheets/base.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" /> 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <!-- <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
         <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png"> -->
-    
-    <script type="text/javascript" src="http://fast.fonts.com/jsapi/39ffadfd-88c3-4409-958c-a892f580a429.js"></script>
   </head>
 
   <body>
@@ -36,8 +34,8 @@ require_once(DOKU_INC.'inc/init.php');
           <h1 id="logo"><img src="assets/app/images/make.opendata.ch_logo.png" alt="MAKE.OPENDATA.CH CAMP" /></h1>
         </div>
         <div class="span8">
-          <h2 id="date">30 septembre – 1 octobre 2011</h2>
-          <p id="blurb">Le premier Open Data Camp en Suisse.</p>
+          <h2 id="date">30 &amp; 31 mars 2012</h2>
+          <p id="blurb">Le deuxième campus Open Data de Suisse fera se rencontrer penseurs et créateurs autour du thème de la «mobilité»</p>
         </div>
         <!-- <div id="action">
           <a class="btn" href="doku.php?id=de:home&do=register&lang=fr">Inscription</a>
@@ -81,53 +79,53 @@ require_once(DOKU_INC.'inc/init.php');
       <div class="page-header">
         <h1>Quoi<span></span></h1>
       </div>
-      
+
       <div class="row section-what">
         <div class="span14 offset2">
           <?= p_wiki_xhtml("fr:what") ?>
         </div>
       </div>
-      
+
       <div class="page-header">
         <h1>Qui<span></span></h1>
       </div>
-      
+
       <div class="row section-who">
         <div class="span14 offset2">
          	<?= p_wiki_xhtml("fr:who") ?>
         </div>
       </div>
-      
+
       <div class="page-header">
         <h1>Quand<span></span></h1>
       </div>
-      
+
       <div class="row section-when">
         <div class="span14 offset2">
           <?= p_wiki_xhtml("fr:when") ?>
         </div>
       </div>
-      
+
       <div class="page-header">
         <h1>Ou<span></span></h1>
       </div>
-      
+
       <div class="row section-where">
         <div class="span14 offset2">
           <?= p_wiki_xhtml("fr:where") ?>
         </div>
       </div>
-      
+
       <div class="page-header">
         <h1>Sponsors<span></span></h1>
       </div>
-      
+
       <div class="row section-sponsor">
         <div class="span14 offset2">
           <?= p_wiki_xhtml("fr:sponsor") ?>
         </div>
       </div>
-      
+
       <div class="page-header">
         <h1>A propos<span></span></h1>
       </div>
