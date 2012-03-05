@@ -35,8 +35,8 @@ require_once(DOKU_INC.'inc/init.php');
           <h1 id="logo"><img src="assets/app/images/make.opendata.ch_logo.png" alt="MAKE.OPENDATA.CH CAMP" /></h1>
         </div>
         <div class="span8">
-          <h2 id="date">30. September – 1. Oktober 2011</h2>
-          <p id="blurb">Das erste Open Data Camp der Schweiz bringt Denker und Macher zusammen, um gemeinsam einen Unterschied zu machen.</p>
+          <h2 id="date">30. &amp; 31. März 2012</h2>
+          <p id="blurb">Das zweite Open Data Camp bringt in Zürich und Genf Denker und Macher zum Thema <u>bessere Mobilität dank offenen Daten</u> zusammen. Jetzt anmelden und die Schweiz einen grossen Schritt weiterbringen!</p>
         </div>
         <!-- <div id="action">
           <a class="btn" href="doku.php?id=de:home&do=register&lang=de">Melde dich an</a>
@@ -52,7 +52,7 @@ require_once(DOKU_INC.'inc/init.php');
                   <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
                 </span>
                 <span id="share_facebook" class="share_button">
-                  <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=141719789255556&amp;xfbml=1"></script><fb:like href="http://makeopendata.ch/" send="false" layout="button_count" width="100" show_faces="false" font="arial"></fb:like>
+                  <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=141719789255556&amp;xfbml=1"></script><fb:like href="http://make.opendata.ch/" send="false" layout="button_count" width="100" show_faces="false" font="arial"></fb:like>
                 </span>
                 <span id="share_google" class="share_button">
                   <g:plusone size="medium"></g:plusone>
