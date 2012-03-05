@@ -34,8 +34,8 @@ require_once(DOKU_INC.'inc/init.php');
           <h1 id="logo"><img src="assets/app/images/make.opendata.ch_logo.png" alt="MAKE.OPENDATA.CH CAMP" /></h1>
         </div>
         <div class="span8">
-          <h2 id="date">30 septembre – 1 octobre 2011</h2>
-          <p id="blurb">Le premier Open Data Camp en Suisse.</p>
+          <h2 id="date">30 &amp; 31 mars 2012</h2>
+          <p id="blurb">Le deuxième campus Open Data de Suisse fera se rencontrer penseurs et créateurs autour du thème de la «mobilité»</p>
         </div>
         <!-- <div id="action">
           <a class="btn" href="doku.php?id=de:home&do=register&lang=fr">Inscription</a>
