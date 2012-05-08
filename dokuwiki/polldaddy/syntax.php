@@ -1,10 +1,9 @@
 <?php
 /**
- * GitHub plugin
+ * polldaddy plugin
  *
- * Syntax: <GITHUB repo-link> - will be replaced with a GitHub widget
- * e.g. <GITHUB loleg/make.opendata.ch>
- *
+ * Syntax: <polldaddy> - will be replaced with a poll
+ * 
  * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
  * @author     seism <se1sm@yahoo.ca>
  */
@@ -17,7 +16,7 @@ require_once(DOKU_PLUGIN.'syntax.php');
  * All DokuWiki plugins to extend the parser/rendering mechanism
  * need to inherit from this class
  */
-class syntax_plugin_github extends DokuWiki_Syntax_Plugin {
+class syntax_plugin_polldaddy extends DokuWiki_Syntax_Plugin {
  
    /**
     * Get an associative array with plugin info.
@@ -43,9 +42,9 @@ class syntax_plugin_github extends DokuWiki_Syntax_Plugin {
         return array(
             'author' => 'seism',
             'email'  => 'se1sm@yahoo.ca',
-            'date'   => '2011-5-1',
-            'name'   => 'Embed GitHub Plugin',
-            'desc'   => 'Show a GitHUb widget in your wiki',
+            'date'   => '2011-1-1',
+            'name'   => 'polldaddy Plugin',
+            'desc'   => 'Embeds a poll',
             'url'    => 'http://www.dokuwiki.org/wiki:plugins',
         );
     }
@@ -113,12 +112,52 @@ class syntax_plugin_github extends DokuWiki_Syntax_Plugin {
     * @see render()
     */
     function connectTo($mode) {
-      $this->Lexer->addEntryPattern('<GITHUB.*?>)',$mode,'plugin_github'); 
-    }
+      $this->Lexer->addSpecialPattern('<polldaddy>',$mode,'plugin_polldaddy');
+    } 
  
+   /**
+    * Handler to prepare matched data for the rendering process.
+    *
+    * <p>
+    * The <tt>$aState</tt> parameter gives the type of pattern
+    * which triggered the call to this method:
+    * </p>
+    * <dl>
+    * <dt>DOKU_LEXER_ENTER</dt>
+    * <dd>a pattern set by <tt>addEntryPattern()</tt></dd>
+    * <dt>DOKU_LEXER_MATCHED</dt>
+    * <dd>a pattern set by <tt>addPattern()</tt></dd>
+    * <dt>DOKU_LEXER_EXIT</dt>
+    * <dd> a pattern set by <tt>addExitPattern()</tt></dd>
+    * <dt>DOKU_LEXER_SPECIAL</dt>
+    * <dd>a pattern set by <tt>addSpecialPattern()</tt></dd>
+    * <dt>DOKU_LEXER_UNMATCHED</dt>
+    * <dd>ordinary text encountered within the plugin's syntax mode
+    * which doesn't match any pattern.</dd>
+    * </dl>
+    * @param $aMatch String The text matched by the patterns.
+    * @param $aState Integer The lexer state for the match.
+    * @param $aPos Integer The character position of the matched text.
+    * @param $aHandler Object Reference to the Doku_Handler object.
+    * @return Integer The current lexer state for the match.
+    * @public
+    * @see render()
+    * @static
+    */
     function handle($match, $state, $pos, &$handler){
-        $match = substr($match,8,-1);
-        return array(strtolower($match));
+        switch ($state) {
+          case DOKU_LEXER_ENTER : 
+            break;
+          case DOKU_LEXER_MATCHED :
+            break;
+          case DOKU_LEXER_UNMATCHED :
+            break;
+          case DOKU_LEXER_EXIT :
+            break;
+          case DOKU_LEXER_SPECIAL :
+            break;
+        }
+        return array();
     }
  
    /**
@@ -141,8 +180,13 @@ class syntax_plugin_github extends DokuWiki_Syntax_Plugin {
     * @see handle()
     */
     function render($mode, &$renderer, $data) {
-        $renderer->doc .= '' . $data;
-        return true;
+        if($mode == 'xhtml'){
+            $renderer->doc .= '<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/5512936.js"></script>
+<noscript><a href="http://polldaddy.com/poll/5512936/">Click here to take part in a poll for Make.OpenData.ch</a></noscript>';
+            // ptype = 'block'
+            return true;
+        }
+        return false;
     }
 }
  
