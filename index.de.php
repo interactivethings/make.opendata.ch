@@ -4,6 +4,8 @@
 if(!defined('DOKU_INC')) define('DOKU_INC',dirname(__FILE__).'/');
 require_once(DOKU_INC.'inc/init.php');
 
+$curLang = 'de';
+
 ?><!DOCTYPE html>
 <html lang="de">
   <head>

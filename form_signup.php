@@ -1,12 +1,5 @@
 <?php
 
-// set current language
-$languages = array('de', 'fr', 'en');
-$lang = 'en';
-if (isset($_GET['lang']) && in_array($_GET['lang'], $languages)) {
-  $lang = $_GET['lang'];
-}
-
 // translations
 $trans['First name'] = array('en'=>'First name:', 'de'=>'Vorname:', 'fr'=>'Prénom:');
 $trans['Last name'] = array('en'=>'Last name:', 'de'=>'Nachname:', 'fr'=>'Nom de famille:');
@@ -27,22 +20,22 @@ $trans['Sign up now'] = array('en'=>'Sign up now', 'de'=>'Jetzt anmelden', 'fr'=
 ?>
 <form action="https://docs.google.com/a/gassert.ch/spreadsheet/formResponse?formkey=dGZUanVzeGlDR08zeU9SOGpNa05IQ0E6MQ" method="post" id="ss-form" target="hidden-iframe">
 <div class="form-entry">
-    <label for="entry_2"><?= $trans['First name'][$lang] ?> <span class="ss-required-asterisk">*</span></label>
+    <label for="entry_2"><?= $trans['First name'][$curLang] ?> <span class="ss-required-asterisk">*</span></label>
     <input type="text" name="entry.2.single" value="" id="entry_2" class="required"/>
 </div>
 
 <div class="form-entry">
-    <label for="entry_8"><?= $trans['Last name'][$lang] ?> <span class="ss-required-asterisk">*</span></label>
+    <label for="entry_8"><?= $trans['Last name'][$curLang] ?> <span class="ss-required-asterisk">*</span></label>
     <input type="text" name="entry.8.single" value="" id="entry_8" class="required"/>
 </div>
 
 <div class="form-entry">
-    <label for="entry_3"><?= $trans['Email address'][$lang] ?> <span class="ss-required-asterisk">*</span></label>
+    <label for="entry_3"><?= $trans['Email address'][$curLang] ?> <span class="ss-required-asterisk">*</span></label>
     <input type="text" name="entry.3.single" value="" id="entry_3" class="required email" />
 </div>
 
 <div class="form-entry">
-    <label for="entry_4"><?= $trans['I\'m coming to'][$lang] ?></label>
+    <label for="entry_4"><?= $trans['I\'m coming to'][$curLang] ?></label>
         <select name="entry.4.single" id="entry_4">
             <option value="Basel">
                 Basel
@@ -54,40 +47,40 @@ $trans['Sign up now'] = array('en'=>'Sign up now', 'de'=>'Jetzt anmelden', 'fr'=
 </div>
 
 <div class="form-entry">
-    <label for="entry_5"><?= $trans['I\'m coming on'][$lang] ?></label>
+    <label for="entry_5"><?= $trans['I\'m coming on'][$curLang] ?></label>
         <select name="entry.5.single" id="entry_5">
             <option value="Saturday+Sunday">
-                <?= $trans['Saturday'][$lang] ?>+<?= $trans['Sunday'][$lang] ?>
+                <?= $trans['Saturday'][$curLang] ?>+<?= $trans['Sunday'][$curLang] ?>
             </option>
             <option value="Saturday">
-                <?= $trans['Saturday'][$lang] ?>
+                <?= $trans['Saturday'][$curLang] ?>
             </option>
             <option value="Sunday">
-                <?= $trans['Sunday'][$lang] ?>
+                <?= $trans['Sunday'][$curLang] ?>
             </option>
         </select>
 </div>
 
 <div class="form-entry">
-    <label for="entry_6"><?= $trans['I\'m a...'][$lang] ?></label>
+    <label for="entry_6"><?= $trans['I\'m a...'][$curLang] ?></label>
     <ul class="form-choices">
         <li>
-            <label><input type="checkbox" name="entry.6.group" value="Designer" id="group_6_1" /> <?= $trans['Designer'][$lang] ?></label>
+            <label><input type="checkbox" name="entry.6.group" value="Designer" id="group_6_1" /> <?= $trans['Designer'][$curLang] ?></label>
         </li>
         <li >
-            <label><input type="checkbox" name="entry.6.group" value="Developer" id="group_6_2" /> <?= $trans['Developer'][$lang] ?></label>
+            <label><input type="checkbox" name="entry.6.group" value="Developer" id="group_6_2" /> <?= $trans['Developer'][$curLang] ?></label>
         </li>
         <li >
-            <label><input type="checkbox" name="entry.6.group" value="Ideator" id="group_6_3" /> <?= $trans['Ideator'][$lang] ?></label>
+            <label><input type="checkbox" name="entry.6.group" value="Ideator" id="group_6_3" /> <?= $trans['Ideator'][$curLang] ?></label>
         </li>
         <li >
-            <label><input type="checkbox" name="entry.6.group" value="Data provider or expert" id="group_6_4" /> <?= $trans['Data provider or expert'][$lang] ?></label>
+            <label><input type="checkbox" name="entry.6.group" value="Data provider or expert" id="group_6_4" /> <?= $trans['Data provider or expert'][$curLang] ?></label>
         </li>
     </ul>
 </div>
 
 <div class="errorbox-good ss-item ss-paragraph-text ss-form-entry">
-    <label for="entry_7"><?= $trans['I have a comment'][$lang] ?></label>
+    <label for="entry_7"><?= $trans['I have a comment'][$curLang] ?></label>
     <textarea name="entry.7.single" rows="8" cols="75"  id="entry_7"></textarea>
 </div>
 
@@ -97,7 +90,7 @@ $trans['Sign up now'] = array('en'=>'Sign up now', 'de'=>'Jetzt anmelden', 'fr'=
 <div class="form-entry">
    <center>
         <span class="button">
-            <a id="signup-button" class="icon white-arrow-right"><?= $trans['Sign up now'][$lang] ?></a>
+            <a id="signup-button" class="icon white-arrow-right"><?= $trans['Sign up now'][$curLang] ?></a>
         </span>
     </center>
 </div>
@@ -116,7 +109,7 @@ $(function() {
     $('#hidden-iframe').load(function() {
         console.log(submitted, new Date());
         if(submitted) {
-            window.location = './form_thanks.php?lang=<?= $lang ?>';
+            window.location = './form_thanks.php?lang=<?= $curLang ?>';
         }
     });
 
