@@ -9,7 +9,6 @@ require_once(DOKU_INC.'inc/init.php');
   <head>
     <meta charset="utf-8">
     <title>MAKE.OPENDATA.CH – Swiss Open Data Camp</title>
-    <meta name="description" content="Sign up to participate in the Swiss Open Data Camp">
     <meta name="author" content="Opendata.ch">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->

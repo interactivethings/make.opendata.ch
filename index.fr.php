@@ -8,9 +8,8 @@ require_once(DOKU_INC.'inc/init.php');
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>MAKE.OPENDATA.CH – 1er Open Data Camp de Suisse</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>MAKE.OPENDATA.CH – Open Data Camp de Suisse</title>
+    <meta name="author" content="Opendata.ch">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -26,6 +25,10 @@ require_once(DOKU_INC.'inc/init.php');
     <!-- <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
         <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png"> -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="http://ajax.microsoft.com/ajax/jQuery.Validate/1.9/jQuery.Validate.min.js"></script>
+
   </head>
 
   <body>
@@ -34,13 +37,9 @@ require_once(DOKU_INC.'inc/init.php');
         <div class="span4">
           <h1 id="logo"><img src="assets/app/images/make.opendata.ch_logo.png" alt="MAKE.OPENDATA.CH CAMP" /></h1>
         </div>
-        <div class="span8">
-          <h2 id="date">30 &amp; 31 mars 2012</h2>
-          <p id="blurb">Le deuxième campus Open Data de Suisse fera se rencontrer penseurs et créateurs autour du thème de la mobilité</p>
+        <div class="span8 section-intro">
+          <?= p_wiki_xhtml("fr:intro") ?>
         </div>
-        <!-- <div id="action">
-          <a class="btn" href="doku.php?id=de:home&do=register&lang=fr">Inscription</a>
-        </div> -->
         <div id="utilities">
           <ul>
             <li id="share_slider" class="slider">
@@ -77,6 +76,7 @@ require_once(DOKU_INC.'inc/init.php');
           </ul>
         </div>
       </div>
+
       <div class="page-header">
         <h1>Quoi<span></span></h1>
       </div>
@@ -85,6 +85,18 @@ require_once(DOKU_INC.'inc/init.php');
         <div class="span14 offset2">
           <?= p_wiki_xhtml("fr:what") ?>
         </div>
+      </div>
+
+	  <div class="page-header">
+        <h1>S'inscrire<span></span></h1>
+      </div>
+
+      <div class="row section-what">
+        <div class="span14 offset2">
+          <?php
+          	include 'form_signup.php';
+          ?>
+	    </div>
       </div>
 
       <div class="page-header">
@@ -118,6 +130,16 @@ require_once(DOKU_INC.'inc/init.php');
       </div>
 
       <div class="page-header">
+        <h1>A propos<span></span></h1>
+      </div>
+
+      <div class="row section-about">
+        <div class="span14 offset2">
+          <?= p_wiki_xhtml("fr:about") ?>
+        </div>
+      </div>
+
+      <div class="page-header">
         <h1>Sponsors<span></span></h1>
       </div>
 
@@ -127,21 +149,12 @@ require_once(DOKU_INC.'inc/init.php');
         </div>
       </div>
 
-      <div class="page-header">
-        <h1>A propos<span></span></h1>
-      </div>
-
-      <div class="row section-about">
-        <div class="span14 offset2">
-          <?= p_wiki_xhtml("fr:about") ?>
-        </div>
-      </div>
     </div><!-- #content -->
     <div id="footer">
       <p>&copy; make.opendata.ch</p>
     </div>
   </div> <!-- /container -->
-    <script type="text/javascript" src="assets/vendor/jquery/jquery-1.6.min.js"></script>
+
     <script type="text/javascript" src="assets/vendor/jquery.waypoints/waypoints.min.js"></script>
     <script src="https://apis.google.com/js/plusone.js"></script>
     <script type="text/javascript" src="assets/app/javascripts/base.js"></script>
