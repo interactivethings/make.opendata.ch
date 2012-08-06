@@ -44,10 +44,13 @@ a:visited {
   color: inherit;
   font-size: inherit;
   font-style: inherit;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 2px dotted black;
+  padding-bottom: 3px;
 }
 a:hover {
-  color: #fff;
+  color: white;
+  border-bottom: 2px dotted white;
 }
 a.media {
   display: inline-block;
@@ -68,6 +71,9 @@ h2 a,
 h3 a {
   text-decoration: none;
   color: white !important;
+}
+em.u {
+  border-bottom: 3px solid #922;
 }
 .row table,
 .row tbody,
@@ -105,13 +111,16 @@ table td {
   padding: 0;
 
 }
-#date{
+#date, .section-intro h2 {
   margin: 25px 0 0;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 24px;
   height: auto;
 }
-#blurb {
+.section-intro a {
+  border: none;
+}
+#blurb, .section-intro p {
   margin: 0px 0 0;
   font-size: 24px;
   line-height: 1.2;

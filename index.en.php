@@ -9,8 +9,8 @@ require_once(DOKU_INC.'inc/init.php');
   <head>
     <meta charset="utf-8">
     <title>MAKE.OPENDATA.CH – Swiss Open Data Camp</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Sign up to participate in the Swiss Open Data Camp">
+    <meta name="author" content="Opendata.ch">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -38,13 +38,9 @@ require_once(DOKU_INC.'inc/init.php');
         <div class="span4">
           <h1 id="logo"><img src="assets/app/images/make.opendata.ch_logo.png" alt="MAKE.OPENDATA.CH CAMP" /></h1>
         </div>
-        <div class="span8">
-          <h2 id="date">30 – 31 March 2012</h2>
-          <p id="blurb">Switzerland's second Open Data Camp brings together thinkers and makers around the topic of <u>data-driven mobility</u>. Register now and accelerate Switzerland!</p>
+        <div class="span8 section-intro">
+          <?= p_wiki_xhtml("en:intro") ?>
         </div>
-        <!-- <div id="action">
-          <a class="btn" href="doku.php?id=de:home&do=register&lang=en">Register</a>
-        </div> -->
         <div id="utilities">
           <ul>
             <li id="share_slider" class="slider">

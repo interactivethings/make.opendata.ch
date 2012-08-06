@@ -32,7 +32,14 @@ require_once(DOKU_INC.'inc/init.php');
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-    <style>
+    <style type="text/css">
+      #header { display: inline; }
+      #thanks {
+		width: auto;
+		margin-left: 30%;
+		margin-top: 10%;
+	  }
+	  
       #thanks > * {
           font-size: 24px;
           line-height: 1.2;
