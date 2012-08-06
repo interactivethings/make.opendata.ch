@@ -40,6 +40,8 @@ require_once(DOKU_INC.'inc/init.php');
 		margin-top: 10%;
 	  }
 	  
+	  #thanks h1 a, #thanks h1 a:hover { border:none !important; }
+	  
       #thanks > * {
           font-size: 24px;
           line-height: 1.2;
@@ -51,7 +53,7 @@ require_once(DOKU_INC.'inc/init.php');
           color: white;
           margin: 25px 0px 0px 25;
           font-family: Helvetica, Arial, sans-serif;
-          font-size: 30px;
+          font-size: 30px !important;
           font-style: normal;
       }
 

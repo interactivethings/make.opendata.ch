@@ -366,7 +366,7 @@ a.btn:hover {
 /////////////////////////////////////////////////////////////////*/
 
 .button {
-
+  cursor: pointer;
   display: inline-block;
 
   -moz-transition: all 100ms ease-out;
