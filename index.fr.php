@@ -35,7 +35,7 @@ require_once(DOKU_INC.'inc/init.php');
         </div>
         <div class="span8">
           <h2 id="date">30 &amp; 31 mars 2012</h2>
-          <p id="blurb">Le deuxième campus Open Data de Suisse fera se rencontrer penseurs et créateurs autour du thème de la «mobilité»</p>
+          <p id="blurb">Le deuxième campus Open Data de Suisse fera se rencontrer penseurs et créateurs autour du thème de la mobilité</p>
         </div>
         <!-- <div id="action">
           <a class="btn" href="doku.php?id=de:home&do=register&lang=fr">Inscription</a>
@@ -51,7 +51,7 @@ require_once(DOKU_INC.'inc/init.php');
                   <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
                 </span>
                 <span id="share_facebook" class="share_button">
-                  <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=141719789255556&amp;xfbml=1"></script><fb:like href="http://makeopendata.ch/" send="false" layout="button_count" width="100" show_faces="false" font="arial"></fb:like>
+                  <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=141719789255556&amp;xfbml=1"></script><fb:like href="http://make.opendata.ch/" send="false" layout="button_count" width="100" show_faces="false" font="arial"></fb:like>
                 </span>
                 <span id="share_google" class="share_button">
                   <g:plusone size="medium"></g:plusone>
