@@ -126,10 +126,6 @@ $trans['I have a comment']=array('en'=>'I have a comment', 'de'=>'Comments', 'fr
 
 </style>
 
-<!-- validation -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="http://ajax.microsoft.com/ajax/jQuery.Validate/1.9/jQuery.Validate.min.js"></script>
-
 <script>
 // safeguard for iframe load event firing twice
 var submitted = false;

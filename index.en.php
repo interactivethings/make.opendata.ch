@@ -26,6 +26,9 @@ require_once(DOKU_INC.'inc/init.php');
         <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png"> -->
 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="http://ajax.microsoft.com/ajax/jQuery.Validate/1.9/jQuery.Validate.min.js"></script>
+
   </head>
 
   <body>
@@ -155,7 +158,7 @@ require_once(DOKU_INC.'inc/init.php');
       <p>&copy; make.opendata.ch</p>
     </div>
   </div> <!-- /container -->
-    <script type="text/javascript" src="assets/vendor/jquery/jquery-1.6.min.js"></script>
+  
     <script type="text/javascript" src="assets/vendor/jquery.waypoints/waypoints.min.js"></script>
     <script src="https://apis.google.com/js/plusone.js"></script>
     <script type="text/javascript" src="assets/app/javascripts/base.js"></script>
