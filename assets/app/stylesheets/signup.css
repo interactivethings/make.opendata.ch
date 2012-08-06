@@ -1,5 +1,6 @@
 /* STYLING FOR GOOGLE DOCS SIGNUP FORM */
 #ss-form label {
+  width: 10em;
   font-style: italic;
   line-height: 1.5em;
   font-family: Times, 'Times New Roman', serif;
