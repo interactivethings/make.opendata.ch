@@ -1,0 +1,69 @@
+/* STYLING FOR GOOGLE DOCS SIGNUP FORM */
+#ss-form label {
+  font-style: italic;
+  line-height: 1.5em;
+  font-family: Times, 'Times New Roman', serif;
+  font-size: 18px;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+#ss-form label.error {
+  display: block;
+  text-indent: 25px;
+  margin: 5px;
+  background: url('/assets/app/images/icons.png') no-repeat;
+  background-position: 0 -178px;
+}
+#ss-form input, #ss-form textarea, #ss-form select {
+  color: black !important;
+  margin-left: 10px;
+}
+#ss-form input[type=text] {
+  width: 15em;
+}
+#ss-form select {
+  width: 16em;
+}
+#ss-form input.error {
+  box-shadow: 0 0 2em 0.4em black;
+  border: 1px solid black;
+}
+#ss-form textarea {
+  height: 3em;
+  width: 30em;
+}
+#ss-form .form-choices {
+  list-style: none;
+}
+#ss-form .form-choices li {
+  display: inline-block;
+  vertical-align: top;
+}
+#ss-form .form-choices label {
+  width: auto;
+}
+#ss-form .form-choices label {
+  text-align: left;
+}
+#ss-form .form-entry {
+  margin: 10px 0px;
+}
+#ss-form label, #ss-form .ss-q-help {
+  text-align:left;
+}
+#ss-form .ss-choice-item:last-child {
+  display: block;
+}
+#ss-form .ss-choice-item:last-child label:last-child {
+  width: auto;
+}
+#ss-form .ss-required-asterisk {
+  text-align: right;
+  color: black;
+  padding-left: 1pt;
+}
+#ss-form .button {
+  margin-top: 35px;
+}
+
