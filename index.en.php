@@ -17,8 +17,9 @@ require_once(DOKU_INC.'inc/init.php');
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="assets/vendor/bootstrap/bootstrap-1.1.0.min.css" rel="stylesheet">
-    <link href="assets/app/stylesheets/base.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/bootstrap-1.1.0.min.css" rel="stylesheet" />
+    <link href="assets/app/stylesheets/base.css" rel="stylesheet" />
+    <link href="assets/app/stylesheets/signup.css" rel="stylesheet" />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -80,7 +81,7 @@ require_once(DOKU_INC.'inc/init.php');
           </ul>
         </div>
       </div>
-      
+
       <div class="page-header">
         <h1>What<span></span></h1>
       </div>
@@ -97,8 +98,8 @@ require_once(DOKU_INC.'inc/init.php');
 
       <div class="row section-what">
         <div class="span14 offset2">
-          <?php 
-          	include 'form_signup.php'; 
+          <?php
+          	include 'form_signup.php';
           ?>
 	    </div>
       </div>
@@ -158,7 +159,7 @@ require_once(DOKU_INC.'inc/init.php');
       <p>&copy; make.opendata.ch</p>
     </div>
   </div> <!-- /container -->
-  
+
     <script type="text/javascript" src="assets/vendor/jquery.waypoints/waypoints.min.js"></script>
     <script src="https://apis.google.com/js/plusone.js"></script>
     <script type="text/javascript" src="assets/app/javascripts/base.js"></script>

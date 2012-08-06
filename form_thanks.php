@@ -4,10 +4,10 @@
 $languages = array('de', 'fr', 'en');
 
 // default language
-$lang = 'en';
+$curLang = 'en';
 
 if (isset($_GET['lang']) && in_array($_GET['lang'], $languages)) {
-  $lang = $_GET['lang'];
+  $curLang = $_GET['lang'];
 }
 
 /* DokuWiki setup */
@@ -48,9 +48,14 @@ require_once(DOKU_INC.'inc/init.php');
           font-style: normal;
       }
 
+      #thanks h1 a {
+          text-decoration: none;
+      }
+
       /* fix dokuwiki list */
       #thanks div.li {
           display: inline;
+          font-style: italic;
       }
       #thanks li {
           margin-bottom: 0.75em;
@@ -78,9 +83,11 @@ require_once(DOKU_INC.'inc/init.php');
         <div class="span4">
           <h1 id="logo"><img src="assets/app/images/make.opendata.ch_logo.png" alt="MAKE.OPENDATA.CH CAMP" /></h1>
         </div>
-        </div>
-          <?= p_wiki_xhtml($lang . ":thanks") ?>
-        </div>
+
+       </div>
+
+      <div id="thanks">
+          <?= p_wiki_xhtml($curLang . ":thanks") ?>
       </div>
 
     </div><!-- #content -->

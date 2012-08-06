@@ -17,8 +17,9 @@ require_once(DOKU_INC.'inc/init.php');
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="assets/vendor/bootstrap/bootstrap-1.1.0.min.css" rel="stylesheet">
-    <link href="assets/app/stylesheets/base.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/bootstrap-1.1.0.min.css" rel="stylesheet" />
+    <link href="assets/app/stylesheets/base.css" rel="stylesheet" />
+    <link href="assets/app/stylesheets/signup.css" rel="stylesheet" />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
