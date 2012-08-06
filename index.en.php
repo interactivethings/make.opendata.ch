@@ -77,6 +77,7 @@ require_once(DOKU_INC.'inc/init.php');
           </ul>
         </div>
       </div>
+      
       <div class="page-header">
         <h1>What<span></span></h1>
       </div>
@@ -84,6 +85,18 @@ require_once(DOKU_INC.'inc/init.php');
       <div class="row section-what">
         <div class="span14 offset2">
           <?= p_wiki_xhtml("en:what") ?>
+	    </div>
+      </div>
+
+	  <div class="page-header">
+        <h1>Register<span></span></h1>
+      </div>
+
+      <div class="row section-what">
+        <div class="span14 offset2">
+          <?php 
+          	include 'form_signup.php'; 
+          ?>
 	    </div>
       </div>
 
