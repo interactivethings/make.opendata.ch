@@ -45,12 +45,12 @@ a:visited {
   font-size: inherit;
   font-style: inherit;
   text-decoration: none;
-  border-bottom: 2px dotted black;
-  padding-bottom: 3px;
+  border-bottom: 2px solid #922;
+  padding-bottom: 2px;
 }
 a:hover {
   color: white;
-  border-bottom: 2px dotted white;
+  border-bottom: 2px solid white;
 }
 a.media {
   display: inline-block;
@@ -73,7 +73,7 @@ h3 a {
   color: white !important;
 }
 em.u {
-  border-bottom: 3px solid #922;
+  text-decoration: underline;
 }
 .row table,
 .row tbody,
