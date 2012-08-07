@@ -365,6 +365,7 @@ a.btn:hover {
 //
 /////////////////////////////////////////////////////////////////*/
 
+.button a { border: none; }
 .button {
   cursor: pointer;
   display: inline-block;

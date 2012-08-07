@@ -12,7 +12,7 @@ $trans['I\'m a...'] = array('en'=>'I\'m a:', 'de'=>'Ich nehme teil als...', 'fr'
 $trans['Designer'] = array('en'=>'Designer', 'de'=>'Designer', 'fr'=>'Designer');
 $trans['Developer'] = array('en'=>'Developer', 'de'=>'Entwickler', 'fr'=>'Développeur');
 $trans['Ideator'] = array('en'=>'Ideator', 'de'=>'Ideator', 'fr'=>'Idéateur');
-$trans['Data provider or expert'] = array('en'=>'Data provider or expert', 'de'=>'Fachexpert oder Datenbesitzer', 'fr'=>'Expert');
+$trans['Data provider or expert'] = array('en'=>'Data provider or expert', 'de'=>'Fachexperte oder Datenbesitzer', 'fr'=>'Expert');
 $trans['I have a comment'] = array('en'=>'I have a comment', 'de'=>'Comments', 'fr'=>'Commentaires');
 $trans['Sign up now'] = array('en'=>'Sign up now', 'de'=>'Jetzt anmelden', 'fr'=>'Enregistrer');
 
@@ -97,7 +97,7 @@ $trans['Sign up now'] = array('en'=>'Sign up now', 'de'=>'Jetzt anmelden', 'fr'=
 
 </form>
 
-<script>
+<script language="JavaScript">
 // safeguard for iframe load event firing twice
 var submitted = false;
 
@@ -107,7 +107,9 @@ $(function() {
     });
 
     $('#hidden-iframe').load(function() {
-        console.log(submitted, new Date());
+    	if (typeof console != "undefined") {
+	        console.log(submitted, new Date());
+	    }
         if(submitted) {
             window.location = './form_thanks.php?lang=<?= $curLang ?>';
         }
