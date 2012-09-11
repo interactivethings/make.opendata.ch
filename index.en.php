@@ -4,27 +4,32 @@
 if(!defined('DOKU_INC')) define('DOKU_INC',dirname(__FILE__).'/');
 require_once(DOKU_INC.'inc/init.php');
 
+$curLang = 'en';
+
 ?><!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>MAKE.OPENDATA.CH – Swiss Open Data Camp</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Opendata.ch">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="assets/vendor/bootstrap/bootstrap-1.1.0.min.css" rel="stylesheet">
-    <link href="assets/app/stylesheets/base.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/bootstrap-1.1.0.min.css" rel="stylesheet" />
+    <link href="assets/app/stylesheets/base.css" rel="stylesheet" />
+    <link href="assets/app/stylesheets/signup.css" rel="stylesheet" />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <!-- <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
         <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png"> -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="http://ajax.microsoft.com/ajax/jQuery.Validate/1.9/jQuery.Validate.min.js"></script>
 
   </head>
 
@@ -34,13 +39,9 @@ require_once(DOKU_INC.'inc/init.php');
         <div class="span4">
           <h1 id="logo"><img src="assets/app/images/make.opendata.ch_logo.png" alt="MAKE.OPENDATA.CH CAMP" /></h1>
         </div>
-        <div class="span8">
-          <h2 id="date">30 – 31 March 2012</h2>
-          <p id="blurb">Switzerland's second Open Data Camp brings together thinkers and makers around the topic of <u>data-driven mobility</u>. Register now and accelerate Switzerland!</p>
+        <div class="span8 section-intro">
+          <?= p_wiki_xhtml("en:intro") ?>
         </div>
-        <!-- <div id="action">
-          <a class="btn" href="doku.php?id=de:home&do=register&lang=en">Register</a>
-        </div> -->
         <div id="utilities">
           <ul>
             <li id="share_slider" class="slider">
@@ -77,6 +78,7 @@ require_once(DOKU_INC.'inc/init.php');
           </ul>
         </div>
       </div>
+
       <div class="page-header">
         <h1>What<span></span></h1>
       </div>
@@ -84,6 +86,18 @@ require_once(DOKU_INC.'inc/init.php');
       <div class="row section-what">
         <div class="span14 offset2">
           <?= p_wiki_xhtml("en:what") ?>
+	    </div>
+      </div>
+
+	  <div class="page-header">
+        <h1>Register<span></span></h1>
+      </div>
+
+      <div class="row section-what">
+        <div class="span14 offset2">
+          <?php
+          	include 'form_signup.php';
+          ?>
 	    </div>
       </div>
 
@@ -142,7 +156,7 @@ require_once(DOKU_INC.'inc/init.php');
       <p>&copy; make.opendata.ch</p>
     </div>
   </div> <!-- /container -->
-    <script type="text/javascript" src="assets/vendor/jquery/jquery-1.6.min.js"></script>
+
     <script type="text/javascript" src="assets/vendor/jquery.waypoints/waypoints.min.js"></script>
     <script src="https://apis.google.com/js/plusone.js"></script>
     <script type="text/javascript" src="assets/app/javascripts/base.js"></script>
