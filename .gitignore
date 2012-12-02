@@ -1,2 +1,13 @@
 .DS_Store
 *,orig
+COPYING
+README
+VERSION
+bern/
+conf/
+data/
+doku.php
+feed.php
+heartstr.php
+*.disabled
+install.php

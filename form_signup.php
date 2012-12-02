@@ -7,7 +7,7 @@ $trans['Email address'] = array('en'=>'Email address:', 'de'=>'Email:', 'fr'=>'C
 $trans['I\'m coming to'] = array('en'=>'I\'m coming to:', 'de'=>'Ich komme nach:', 'fr'=>'Je viens à:');
 $trans['I\'m coming on'] = array('en'=>'I\'m coming on:', 'de'=>'Ich komme am:', 'fr'=>'Je viens le:');
 $trans['Saturday'] = array('en'=>'Saturday', 'de'=>'Samstag', 'fr'=>'Samedi');
-$trans['Sunday'] = array('en'=>'Sunday', 'de'=>'Sonntag', 'fr'=>'Dimanche');
+$trans['Friday'] = array('en'=>'Friday', 'de'=>'Freitag', 'fr'=>'Vendredi');
 $trans['I\'m a...'] = array('en'=>'I\'m a:', 'de'=>'Ich nehme teil als...', 'fr'=>'Je suis un/e...');
 $trans['Designer'] = array('en'=>'Designer', 'de'=>'Designer', 'fr'=>'Designer');
 $trans['Developer'] = array('en'=>'Developer', 'de'=>'Entwickler', 'fr'=>'Développeur');
@@ -18,74 +18,56 @@ $trans['Sign up now'] = array('en'=>'Sign up now', 'de'=>'Jetzt anmelden', 'fr'=
 
 // Start Google Docs registration form embed
 ?>
-<form action="https://docs.google.com/a/gassert.ch/spreadsheet/formResponse?formkey=dGZUanVzeGlDR08zeU9SOGpNa05IQ0E6MQ" method="post" id="ss-form" target="hidden-iframe">
-<div class="form-entry">
-    <label for="entry_2"><?= $trans['First name'][$curLang] ?> <span class="ss-required-asterisk">*</span></label>
-    <input type="text" name="entry.2.single" value="" id="entry_2" class="required"/>
-</div>
 
-<div class="form-entry">
-    <label for="entry_8"><?= $trans['Last name'][$curLang] ?> <span class="ss-required-asterisk">*</span></label>
-    <input type="text" name="entry.8.single" value="" id="entry_8" class="required"/>
-</div>
+<form id="ss-form" method="POST" action="https://docs.google.com/spreadsheet/formResponse?formkey=dGo3bzVVdUpZVVJEQng5WWo3MnBRd2c6MA&amp;theme=0AX42CRMsmRFbUy1iOGYwN2U2Mi1hNWU0LTRlNjEtYWMyOC1lZmU4ODg1ODc1ODI&amp;embedded=true&amp;ifq">
 
-<div class="form-entry">
-    <label for="entry_3"><?= $trans['Email address'][$curLang] ?> <span class="ss-required-asterisk">*</span></label>
-    <input type="text" name="entry.3.single" value="" id="entry_3" class="required email" />
-</div>
 
-<div class="form-entry">
-    <label for="entry_4"><?= $trans['I\'m coming to'][$curLang] ?></label>
-        <select name="entry.4.single" id="entry_4">
-            <option value="Basel">
-                Basel
-            </option>
-            <option value="Geneva">
-                Genève
-            </option>
-        </select>
-</div>
+<br>
+<div class="errorbox-good">
+<div class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label for="entry_2" class="ss-q-title"><?= $trans['First name'][$curLang] ?>
+<span class="ss-required-asterisk">*</span></label>
+<label for="entry_2" class="ss-q-help"></label>
+<input type="text" id="entry_2" class="ss-q-short" value="" name="entry.2.single"></div></div></div>
+<br> <div class="errorbox-good">
+<div class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label for="entry_8" class="ss-q-title"><?= $trans['Last name'][$curLang] ?>
+<span class="ss-required-asterisk">*</span></label>
+<label for="entry_8" class="ss-q-help"></label>
+<input type="text" id="entry_8" class="ss-q-short" value="" name="entry.8.single"></div></div></div>
+<br> <div class="errorbox-good">
+<div class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label for="entry_3" class="ss-q-title"><?= $trans['Email address'][$curLang] ?>
+<span class="ss-required-asterisk">*</span></label>
+<label for="entry_3" class="ss-q-help"></label>
+<input type="text" id="entry_3" class="ss-q-short" value="" name="entry.3.single"></div></div></div>
+<br> <div class="errorbox-good">
+<div class="ss-item ss-item-required ss-select"><div class="ss-form-entry"><label for="entry_4" class="ss-q-title"><?= $trans['I\'m coming to'][$curLang] ?>
+<span class="ss-required-asterisk">*</span></label>
+<label for="entry_4" class="ss-q-help"></label>
+<select id="entry_4" name="entry.4.single"><option value="Bern">Bern</option> <option value="Sierre">Sierre</option></select></div></div></div>
+<br> <div class="errorbox-good">
+<div class="ss-item  ss-select"><div class="ss-form-entry"><label for="entry_5" class="ss-q-title"><?= $trans['I\'m coming on'][$curLang] ?>
+</label>
+<label for="entry_5" class="ss-q-help"></label>
+<select id="entry_5" name="entry.5.single"><option value="Friday+Saturday">Friday+Saturday</option> <option value="Friday">Friday</option> <option value="Saturday">Saturday</option></select></div></div></div>
+<br> <div class="errorbox-good">
+<div class="ss-item ss-item-required ss-checkbox"><div class="ss-form-entry"><label for="entry_6" class="ss-q-title"><?= $trans['I\'m a'][$curLang] ?>
+<span class="ss-required-asterisk">*</span></label>
+<label for="entry_6" class="ss-q-help"></label>
+<ul class="ss-choices"><li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" id="group_6_1" class="ss-q-checkbox" value="Designer" name="entry.6.group">
+<?= $trans['Designer'][$curLang] ?></label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" id="group_6_2" class="ss-q-checkbox" value="Developer" name="entry.6.group">
+<?= $trans['Developer'][$curLang] ?></label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" id="group_6_3" class="ss-q-checkbox" value="Ideator" name="entry.6.group">
+<?= $trans['Ideator'][$curLang] ?></label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" id="group_6_4" class="ss-q-checkbox" value="Data provider or expert" name="entry.6.group">
+<?= $trans['Data provider or expert'][$curLang] ?></label></li>
+</ul></div></div></div>
+<br> <div class="errorbox-good">
+<div class="ss-item  ss-paragraph-text"><div class="ss-form-entry"><label for="entry_7" class="ss-q-title"><?= $trans['I have a comment'][$curLang] ?>
+</label>
+<label for="entry_7" class="ss-q-help"></label>
+<textarea id="entry_7" class="ss-q-long" cols="75" rows="8" name="entry.7.single"></textarea></div></div></div>
+<br>
+<input type="hidden" value="0" name="pageNumber">
+<input type="hidden" value="" name="backupCache">
 
-<div class="form-entry">
-    <label for="entry_5"><?= $trans['I\'m coming on'][$curLang] ?></label>
-        <select name="entry.5.single" id="entry_5">
-            <option value="Saturday+Sunday">
-                <?= $trans['Saturday'][$curLang] ?>+<?= $trans['Sunday'][$curLang] ?>
-            </option>
-            <option value="Saturday">
-                <?= $trans['Saturday'][$curLang] ?>
-            </option>
-            <option value="Sunday">
-                <?= $trans['Sunday'][$curLang] ?>
-            </option>
-        </select>
-</div>
-
-<div class="form-entry">
-    <label for="entry_6"><?= $trans['I\'m a...'][$curLang] ?></label>
-    <ul class="form-choices">
-        <li>
-            <label><input type="checkbox" name="entry.6.group" value="Designer" id="group_6_1" /> <?= $trans['Designer'][$curLang] ?></label>
-        </li>
-        <li >
-            <label><input type="checkbox" name="entry.6.group" value="Developer" id="group_6_2" /> <?= $trans['Developer'][$curLang] ?></label>
-        </li>
-        <li >
-            <label><input type="checkbox" name="entry.6.group" value="Ideator" id="group_6_3" /> <?= $trans['Ideator'][$curLang] ?></label>
-        </li>
-        <li >
-            <label><input type="checkbox" name="entry.6.group" value="Data provider or expert" id="group_6_4" /> <?= $trans['Data provider or expert'][$curLang] ?></label>
-        </li>
-    </ul>
-</div>
-
-<div class="errorbox-good ss-item ss-paragraph-text ss-form-entry">
-    <label for="entry_7"><?= $trans['I have a comment'][$curLang] ?></label>
-    <textarea name="entry.7.single" rows="8" cols="75"  id="entry_7"></textarea>
-</div>
-
-<input type="hidden" name="pageNumber" value="0" />
-<input type="hidden" name="backupCache" value="" />
+<!-- end of standard form -->
 
 <div class="form-entry">
    <center>

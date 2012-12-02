@@ -67,4 +67,6 @@
 #ss-form .button {
   margin-top: 35px;
 }
-
+#ss-form .errorbox-good {
+  clear:both;
+}
