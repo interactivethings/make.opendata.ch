@@ -14,7 +14,7 @@ $trans['Developer'] = array('en'=>'Developer', 'de'=>'Entwickler', 'fr'=>'Dével
 $trans['Ideator'] = array('en'=>'Ideator', 'de'=>'Ideator', 'fr'=>'Idéateur');
 $trans['Data provider or expert'] = array('en'=>'Data provider or expert', 'de'=>'Fachexperte oder Datenbesitzer', 'fr'=>'Expert');
 $trans['I have a comment'] = array('en'=>'I have a comment', 'de'=>'Comments', 'fr'=>'Commentaires');
-$trans['Sign up now'] = array('en'=>'Sign up now', 'de'=>'Jetzt anmelden', 'fr'=>'Enregistrer');
+$trans['Sign up now'] = array('en'=>'Sign up now!', 'de'=>'Jetzt anmelden!', 'fr'=>'Enregistrer!');
 
 // Start Google Docs registration form embed
 ?>

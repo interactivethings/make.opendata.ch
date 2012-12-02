@@ -34,17 +34,20 @@
   height: 3em;
   width: 30em;
 }
-#ss-form .form-choices {
+#ss-form .ss-choices {
   list-style: none;
+  clear: both;
+  position: relative;
+  top: -1em;
 }
-#ss-form .form-choices li {
+#ss-form .ss-choices li {
   display: inline-block;
   vertical-align: top;
 }
-#ss-form .form-choices label {
+#ss-form .ss-choices label {
   width: auto;
 }
-#ss-form .form-choices label {
+#ss-form .ss-choices label {
   text-align: left;
 }
 #ss-form .form-entry {
