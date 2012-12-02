@@ -17,10 +17,18 @@ $trans['I have a comment'] = array('en'=>'I have a comment', 'de'=>'Comments', '
 $trans['Sign up now'] = array('en'=>'Sign up now!', 'de'=>'Jetzt anmelden!', 'fr'=>'Enregistrer!');
 
 // Start Google Docs registration form embed
+// Update instructions:
+/*
+ *  copy the latest HTML code from the Live Form
+ *  replace <label (.*)>([A-z ']+) by <label \1><?= $trans['\2'][$curLang] ?>
+ *  replace ([A-z ']+)</label> by <?= $trans['\1'][$curLang] ?></label>
+ *  replace I'm by I\'m
+ *  add target="hidden-iframe" to <form> tag
+ * 
+ */
 ?>
 
-<form id="ss-form" method="POST" action="https://docs.google.com/spreadsheet/formResponse?formkey=dGo3bzVVdUpZVVJEQng5WWo3MnBRd2c6MA&amp;theme=0AX42CRMsmRFbUy1iOGYwN2U2Mi1hNWU0LTRlNjEtYWMyOC1lZmU4ODg1ODc1ODI&amp;embedded=true&amp;ifq">
-
+<form target="hidden-iframe" action="https://docs.google.com/spreadsheet/formResponse?formkey=dGo3bzVVdUpZVVJEQng5WWo3MnBRd2c6MA&amp;theme=0AX42CRMsmRFbUy1iOGYwN2U2Mi1hNWU0LTRlNjEtYWMyOC1lZmU4ODg1ODc1ODI&amp;ifq" method="POST" id="ss-form">
 
 <br>
 <div class="errorbox-good">
@@ -66,6 +74,9 @@ $trans['Sign up now'] = array('en'=>'Sign up now!', 'de'=>'Jetzt anmelden!', 'fr
 <br>
 <input type="hidden" value="0" name="pageNumber">
 <input type="hidden" value="" name="backupCache">
+
+<div class="ss-item ss-navigate"><div class="ss-form-entry">
+<input type="submit" name="submit" value="Submit"></div></div>
 
 <!-- end of standard form -->
 
