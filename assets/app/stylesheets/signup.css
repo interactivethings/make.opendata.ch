@@ -34,20 +34,21 @@
   height: 3em;
   width: 30em;
 }
-#ss-form .ss-choices {
+#ss-form ul {
   list-style: none;
   clear: both;
   position: relative;
-  top: -1em;
 }
-#ss-form .ss-choices li {
+#ss-form ul li {
+  list-style: none;
   display: inline-block;
   vertical-align: top;
+  margin-bottom: 0pt;
 }
-#ss-form .ss-choices label {
+#ss-form li label {
   width: auto;
 }
-#ss-form .ss-choices label {
+#ss-form ul label {
   text-align: left;
 }
 #ss-form .form-entry {
@@ -56,20 +57,18 @@
 #ss-form label, #ss-form .ss-q-help {
   text-align:left;
 }
-#ss-form .ss-choice-item:last-child {
-  display: block;
-}
-#ss-form .ss-choice-item:last-child label:last-child {
-  width: auto;
-}
 #ss-form .ss-required-asterisk {
   text-align: right;
   color: black;
+  font-weight: bold;
   padding-left: 1pt;
 }
 #ss-form .button {
-  margin-top: 35px;
+  margin-top: 1em;
 }
 #ss-form .errorbox-good {
   clear:both;
+}
+#ss-form .ss-navigate {
+  display:none;
 }
