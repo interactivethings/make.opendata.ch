@@ -1,5 +1,4 @@
 .DS_Store
-<<<<<<< HEAD
 .settings
 .project
 .swp
@@ -10,6 +9,15 @@ logs
 tmp
 npm-debug.log
 db/*
-=======
 *,orig
->>>>>>> 89a029c80d6af788ffb10c088de0a4013f9ca568
+COPYING
+README
+VERSION
+bern/
+conf/
+data/
+doku.php
+feed.php
+heartstr.php
+*.disabled
+install.php

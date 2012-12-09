@@ -14,11 +14,22 @@ $trans['Developer'] = array('en'=>'Developer', 'de'=>'Entwickler', 'fr'=>'Dével
 $trans['Ideator'] = array('en'=>'Ideator', 'de'=>'Ideator', 'fr'=>'Idéateur');
 $trans['Data provider or expert'] = array('en'=>'Data provider or expert', 'de'=>'Fachexperte oder Datenbesitzer', 'fr'=>'Expert');
 $trans['I have a comment'] = array('en'=>'I have a comment', 'de'=>'Comments', 'fr'=>'Commentaires');
-$trans['Sign up now'] = array('en'=>'Sign up now', 'de'=>'Jetzt anmelden', 'fr'=>'Enregistrer');
+$trans['Sign up now'] = array('en'=>'Sign up now!', 'de'=>'Jetzt anmelden!', 'fr'=>'Enregistrer!');
 
 // Start Google Docs registration form embed
+// Update instructions:
+/*
+ *  copy the latest HTML code from the Live Form
+ *  replace <label (.*)>([A-z ']+) by <label \1><?= $trans['\2'][$curLang] ?>
+ *  replace ([A-z ']+)</label> by <?= $trans['\1'][$curLang] ?></label>
+ *  replace I'm by I\'m
+ *  add target="hidden-iframe" to <form> tag
+ * 
+ */
 ?>
-<form action="https://docs.google.com/a/gassert.ch/spreadsheet/formResponse?formkey=dGZUanVzeGlDR08zeU9SOGpNa05IQ0E6MQ" method="post" id="ss-form" target="hidden-iframe">
+
+<form target="hidden-iframe" action="https://docs.google.com/spreadsheet/formResponse?formkey=dGo3bzVVdUpZVVJEQng5WWo3MnBRd2c6MA&amp;theme=0AX42CRMsmRFbUy1iOGYwN2U2Mi1hNWU0LTRlNjEtYWMyOC1lZmU4ODg1ODc1ODI&amp;embedded=true&amp;ifq" method="POST" id="ss-form">
+
 <div class="form-entry">
     <label for="entry_2"><?= $trans['First name'][$curLang] ?> <span class="ss-required-asterisk">*</span></label>
     <input type="text" name="entry.2.single" value="" id="entry_2" class="required"/>
@@ -37,11 +48,11 @@ $trans['Sign up now'] = array('en'=>'Sign up now', 'de'=>'Jetzt anmelden', 'fr'=
 <div class="form-entry">
     <label for="entry_4"><?= $trans['I\'m coming to'][$curLang] ?></label>
         <select name="entry.4.single" id="entry_4">
-            <option value="Basel">
-                Basel
+            <option value="Bern">
+                Bern
             </option>
-            <option value="Geneva">
-                Genève
+            <option value="Sierre">
+                Sierre
             </option>
         </select>
 </div>
@@ -88,11 +99,16 @@ $trans['Sign up now'] = array('en'=>'Sign up now', 'de'=>'Jetzt anmelden', 'fr'=
 <input type="hidden" name="backupCache" value="" />
 
 <div class="form-entry">
-   <center>
-        <span class="button">
-            <a id="signup-button" class="icon white-arrow-right"><?= $trans['Sign up now'][$curLang] ?></a>
-        </span>
-    </center>
+    <span class="button">
+        <a id="signup-button" class="icon white-arrow-right"><?= $trans['Sign up now'][$curLang] ?></a>
+    </span>
+</div>
+
+<!-- DO NOT REMOVE, FORM FAILS WITHOUT THIS -->
+<div style="display:none">
+	<div class="ss-item ss-navigate"><div class="ss-form-entry">
+		<input type="submit" name="submit" value="Submit"></div></div></form>
+	</div>
 </div>
 
 </form>
