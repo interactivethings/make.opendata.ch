@@ -44,6 +44,9 @@ $curLang = 'fr';
         </div>
         <div id="utilities">
           <ul>
+          	<li class="link"><a href="http://opendata.ch">Opendata.ch</a></li>
+          	<li class="link"><a href="/wiki">Wiki</a></li>
+          	<li class="link"><a href="/forum">Forum</a></li>
             <li id="share_slider" class="slider">
               <span class="slide_label">
                 Share
