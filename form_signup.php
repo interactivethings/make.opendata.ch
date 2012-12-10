@@ -107,8 +107,8 @@ $trans['Sign up now'] = array('en'=>'Sign up now!', 'de'=>'Jetzt anmelden!', 'fr
 <!-- DO NOT REMOVE, FORM FAILS WITHOUT THIS -->
 <div style="display:none">
 	<div class="ss-item ss-navigate"><div class="ss-form-entry">
-		<input type="submit" name="submit" value="Submit"></div></div></form>
-	</div>
+		<input type="submit" name="submit" value="Submit">
+	</div></div>
 </div>
 
 </form>
@@ -134,9 +134,9 @@ $(function() {
     $('#ss-form').submit(function() {
         submitted = true;
     });
-
+	
     $('#signup-button').click(function() {
-        $('#ss-form').submit();
+        $('input[type=submit]').click();
     });
 });
 
