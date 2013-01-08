@@ -59,15 +59,15 @@
 		<div id="mainNav" class="clearfix">
 			<?php wp_nav_menu( array('menu_class' => '', 'theme_location' => 'main', 'fallback_cb' => 'default_nav' )); ?>
 		</div>
+		<!--
 			<span id="languageSwitcher">
 				<a href="http://fr.opendata.ch/">FR</a>
 				/
 				<a href="http://opendata.ch/">DE</a>
-				<!--
 				/
 				<a href="http://en.opendata.ch/">EN</a>
-				-->
 		</span>
+		-->
 
 		<div id="sideWidgets">
 		<?php
