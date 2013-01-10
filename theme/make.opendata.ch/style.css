@@ -1835,3 +1835,6 @@ ol#commentslist {
 .widget_kbrss h3 a, .widget_text h3 a {
 	color: #444;
 }
+h1.ss-form-title{
+  display: none;
+}
