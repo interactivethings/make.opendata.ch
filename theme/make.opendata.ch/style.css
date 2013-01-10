@@ -653,6 +653,7 @@ a.button, #footer a.button {
 	color: #B0B0AD;
 	text-decoration: none;
 	line-height: 1.3em;
+	margin-top: 0;
 }
 
 #homeMessage h2 a {
