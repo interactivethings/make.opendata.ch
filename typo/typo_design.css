@@ -8,7 +8,6 @@ body {
   font-size: 100%;
   background: __text__;
 }
-
 div.dokuwiki {
   font-family: Georgia, serif, sans-serif;
   font-size: 1em;
@@ -17,7 +16,6 @@ div.dokuwiki {
   margin: 0;
   float: left;
 }
-
 div.dokuwiki div#header {
   width: 100%;
 }
@@ -95,7 +93,7 @@ div.dokuwiki div#content {
   background: __background__;
   width: 70%;
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   min-height: 1600px;
 }
@@ -106,7 +104,7 @@ div.dokuwiki div#sidebar {
   padding-right: 2em;
   padding-top: 0.3em;
   position: absolute;
-  left: 70%;
+  right: 70%;
 }
 
 div.dokuwiki div#sidebar .doc {
@@ -402,6 +400,164 @@ div.dokuwiki div.success {
   width: 205%;
 }
 
-/**
- * vim:ts=2:sw=2:et:enc=utf-8:
- */
+/* /////////////////////////////////////////////////////////////////////
+//  Make.Opendata.ch Customization
+/////////////////////////////////////////////////////////////////////*/
+
+/* Layout */
+body{
+  border-top: 5px solid 
+  #40BFFF;
+}
+div.dokuwiki div#content{
+  top: 5px;
+}
+div.dokuwiki div.page {
+  padding: 40px 2.5em 2em 2.5em;
+  border-right: none;
+}
+div.dokuwiki div#sidebar {
+  padding: 40px 2.5em 2em 2.5em;
+}
+/* Typography */
+@font-face {
+  font-family: 'M3MonoRegular';
+  src: url('/assets/app/fonts/m3/m3monoregular-webfont.eot');
+  src: url('/assets/app/fonts/m3/m3monoregular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/app/fonts/m3/m3monoregular-webfont.woff') format('woff'),
+       url('/assets/app/fonts/m3/m3monoregular-webfont.ttf') format('truetype'),
+       url('/assets/app/fonts/m3/m3monoregular-webfont.svg#M3MonoRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'M3MonoBold';
+  src: url('/assets/app/fonts/m3/m3monobold-webfont.eot');
+  src: url('/assets/app/fonts/m3/m3monobold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/app/fonts/m3/m3monobold-webfont.woff') format('woff'),
+       url('/assets/app/fonts/m3/m3monobold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+div.dokuwiki {
+  font-family: 'Droid Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.91em;
+  color: #444;
+}
+div.dokuwiki h1,
+div.dokuwiki h2,
+div.dokuwiki h3{
+	font-family:"M3MonoRegular","Helvetica Neue","Sans-Serif";
+	font-weight: normal;
+	color: #444;
+}
+div.dokuwiki h1 a,
+div.dokuwiki h2 a,
+div.dokuwiki h3 a,
+div.dokuwiki h4 a,
+div.dokuwiki h1 a:hover,
+div.dokuwiki h2 a:hover,
+div.dokuwiki h3 a:hover,
+div.dokuwiki h4 a:hover{
+  font-weight: normal !important;
+  color: #444 !important;
+}
+div.dokuwiki #sidebar div.navigation div.li a{
+	font-family:"M3MonoRegular","Helvetica Neue","Sans-Serif";
+	font-weight:normal;
+	font-size: 18px;
+	color: #444 !important;
+}
+div.dokuwiki #sidebar div.navigation div.li a:hover{
+  color: #40BFFF !important;
+}
+div.dokuwiki a,
+div.dokuwiki a:link,
+div.dokuwiki a:visited,
+div.dokuwiki a.wikilink1{
+  color: #40BFFF !important;
+}
+div.dokuwiki a:hover{
+  color: #e61414 !important;
+}
+/* Sidebar */
+div.dokuwiki #sidebar div.logo{
+  font-size: 100%;
+  margin-left: 15px;
+}
+div.dokuwiki #sidebar a#dokuwiki__top {
+  margin-left: 1.5em;
+  background: url(/assets/app/images/Make.OpenData.ch-Logo.png) no-repeat;
+  width: 200px;
+  height: 100px;
+}
+div.dokuwiki #sidebar div.navigation ul{
+  padding: 0;
+  border: none;
+}
+div.dokuwiki #sidebar div.navigation div.li{
+  border: none;
+  padding-left: 15px;
+}
+div.dokuwiki #sidebar div.navigation div.li a.active{
+  color: #40BFFF !important;
+}
+div.dokuwiki #sidebar div.navigation div.li div.navigation{
+  margin-top: 0;
+  padding-top: 0;
+}
+div.dokuwiki #sidebar div.actions a.action {
+  font-size: 87.5%;
+  line-height: 150%;
+  color: #40BFFF !important;
+}
+div.dokuwiki #sidebar div.actions a.action:hover {
+  background: none;
+  color: #e61414 !important;
+  text-decoration: none;
+}
+div.dokuwiki #sidebar div.actions li {
+  padding-bottom: 0;
+}
+div.dokuwiki #sidebar div.sidebar_box,
+div.dokuwiki #sidebar div#search,
+div.dokuwiki #sidebar div#pagemeta{
+  border: none;
+  text-align: left;
+  padding: 15px;
+}
+div.dokuwiki #sidebar input.button, 
+div.dokuwiki #sidebar button.button {
+  border: none;
+  color: #fff;
+  background: #40BFFF;
+  font-size: 100%;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 3px 5px;
+}
+div.dokuwiki #sidebar input.button:hover, 
+div.dokuwiki #sidebar button.button:hover {
+  background: #e61414;
+}
+div.dokuwiki #sidebar input.edit,
+div.dokuwiki #sidebar select.edit{
+  background: #fff;
+  font-family: 'Droid Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+div.dokuwiki #sidebar div.doc,
+div.dokuwiki #sidebar div.license{
+  text-align: left;
+  padding: 0 0 15px;
+  font-size: 75%;
+}
+/* Sidebar */
+.dokuwiki div.plugin_translation ul li a.wikilink2:link, 
+.dokuwiki div.plugin_translation ul li a.wikilink2:visited {
+  background-color: #40BFFF;
+}
+.dokuwiki div.plugin_translation ul li a.wikilink2:hover, 
+.dokuwiki div.plugin_translation ul li a.wikilink2:active{
+  background-color: #e61414;
+}
